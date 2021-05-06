@@ -1,0 +1,4 @@
+2021-05-06 18:07:35,959 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2021-05-06 18:07:35,959 ERROR mate.academy.service.AuthenticationServiceImpl:17 Password validation failed. Params: login = bob
+2021-05-06 18:07:35,959 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called
+2021-05-06 18:07:35,959 INFO mate.academy.service.AuthenticationServiceImpl:32 Fetched data from DB successful
