@@ -1,4 +1,4 @@
-2021-05-06 18:07:35,959 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
-2021-05-06 18:07:35,959 ERROR mate.academy.service.AuthenticationServiceImpl:17 Password validation failed. Params: login = bob
-2021-05-06 18:07:35,959 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called
-2021-05-06 18:07:35,959 INFO mate.academy.service.AuthenticationServiceImpl:32 Fetched data from DB successful
+2021-05-07 09:18:19,150 ERROR mate.academy.Main:21 Can't login.
+mate.academy.exception.AuthenticationException: Username or password are incorrect!Login:bob
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
