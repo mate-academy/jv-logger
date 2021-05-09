@@ -16,7 +16,7 @@ public class Main {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login("bob", "123");
         } catch (AuthenticationException e) {
             logger.error("Authentication was unsuccessful", e);
             return;
