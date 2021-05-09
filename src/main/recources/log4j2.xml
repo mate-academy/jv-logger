@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="info">  // загальний левел
+<Configuration status="info">
 <Appenders>
     <Console name="LogToConsole" target="SYSTEM_OUT">
         <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %c:%L - %msg%n"/>
@@ -9,7 +9,7 @@
     </File>
 </Appenders>
 <Loggers>
-    <Logger name="mate.academy" level="debug" additivity="false"> // левел саме для цієї папки, загальний не може його перекрити
+    <Logger name="mate.academy" level="debug" additivity="false">
         <AppenderRef ref="LogToConsole"/>
         <AppenderRef ref="LogToFile"/>
     </Logger>
