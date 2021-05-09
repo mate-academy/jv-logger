@@ -1,0 +1,7 @@
+2021-05-09 21:40:51,807 INFO mate.academy.service.AuthenticationServiceImpl:14 Login method was called. With login = bob
+2021-05-09 21:44:17,457 INFO mate.academy.service.AuthenticationServiceImpl:13 Login method was called with login = bob
+2021-05-09 21:44:21,204 INFO mate.academy.service.AuthenticationServiceImpl:13 Login method was called with login = bob
+2021-05-09 21:48:11,361 INFO mate.academy.service.AuthenticationServiceImpl:13 Login method was called with login = bob
+2021-05-09 21:53:25,046 INFO mate.academy.service.AuthenticationServiceImpl:13 Login method was called with login = bob
+2021-05-09 21:53:25,049 INFO mate.academy.service.OrderServiceImpl:15 CompleteOrder method was called with userId = 2
+2021-05-09 21:53:25,050 INFO mate.academy.service.OrderServiceImpl:31 Data was successfully fetched from DB
