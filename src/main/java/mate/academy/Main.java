@@ -1,7 +1,6 @@
 package mate.academy;
 
 import mate.academy.exception.AuthenticationException;
-import mate.academy.model.Order;
 import mate.academy.model.User;
 import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
