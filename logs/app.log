@@ -1,0 +1,5 @@
+2021-05-10 18:16:17,730 INFO mate.academy.service.OrderServiceImpl:31 Successful fetched data from DB
+2021-05-10 18:17:20,726 INFO mate.academy.service.OrderServiceImpl:31 Successful fetched data from DB
+2021-05-10 18:26:49,253 DEBUG mate.academy.service.AuthenticationServiceImpl:13 method login was called. Params: bob
+2021-05-10 18:26:49,256 DEBUG mate.academy.service.OrderServiceImpl:15 method completeOrder was called. Params: 2
+2021-05-10 18:26:49,257 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB
