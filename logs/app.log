@@ -6,3 +6,11 @@
 mate.academy.exception.AuthenticationException: Username or password are incorrect
 	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
 	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2021-05-10 20:05:42,936 INFO mate.academy.service.AuthenticationServiceImpl:13 [main] method login() was called. Params: Login = bob
+2021-05-10 20:05:42,966 ERROR mate.academy.Main:21 [main] We can't found user!
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2021-05-10 20:06:00,701 INFO mate.academy.service.AuthenticationServiceImpl:13 [main] method login() was called. Params: Login = bob
+2021-05-10 20:06:00,710 INFO mate.academy.service.OrderServiceImpl:15 [main] Method Order() was called. Params: userId = 2
+2021-05-10 20:06:00,713 INFO mate.academy.service.OrderServiceImpl:31 [main] Method getAllProductsFromShoppingCart was called with the following parameters: userId = 2. And successfully fetched data from DB
