@@ -1,0 +1,15 @@
+2021-05-10 15:51:59,113 INFO mate.academy.service.AuthenticationServiceImpl login method was called
+2021-05-10 15:51:59,117 INFO mate.academy.service.AuthenticationServiceImpl completeOrder method was called
+2021-05-10 15:53:15,212 INFO mate.academy.service.AuthenticationServiceImpl login method was called
+2021-05-10 15:53:15,217 INFO mate.academy.service.AuthenticationServiceImpl completeOrder method was called
+2021-05-10 16:30:25,877 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2021-05-10 16:30:25,881 ERROR mate.academy.Main:20 Can not login
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:18) [classes/:?]
+2021-05-10 16:43:14,598 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2021-05-10 16:43:14,602 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called
+2021-05-10 16:43:14,604 INFO mate.academy.service.AuthenticationServiceImpl:32 Data is successful fetched from DB
+2021-05-10 16:44:08,573 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2021-05-10 16:44:08,577 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called
+2021-05-10 16:44:08,579 INFO mate.academy.service.AuthenticationServiceImpl:32 data is fetched successfully from DB
