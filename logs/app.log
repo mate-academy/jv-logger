@@ -1,0 +1,9 @@
+2021-05-10 19:51:17,504 INFO mate.academy.Main:15 Method login was called. Login: bob
+2021-05-10 19:51:17,507 INFO mate.academy.Main:17 Method completeOrder was called. UserID: 2
+2021-05-10 19:51:17,507 INFO mate.academy.Main:34 The data was successfully retrieved form DB for UserID: 2
+2021-05-10 19:52:00,775 INFO mate.academy.Main:15 Method login was called. Login: bob
+2021-05-10 19:52:00,780 INFO mate.academy.Main:17 Method completeOrder was called. UserID: 2
+2021-05-10 19:52:00,781 INFO mate.academy.Main:34 The data was successfully retrieved form DB for UserID: 2
+2021-05-10 19:53:12,339 INFO mate.academy.Main:15 Method login was called. Login: bob
+2021-05-10 19:53:12,342 INFO mate.academy.Main:17 Method completeOrder was called. UserID: 2
+2021-05-10 19:53:12,348 INFO mate.academy.Main:34 The data was successfully retrieved form DB for UserID: 2
