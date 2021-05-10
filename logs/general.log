@@ -1,0 +1,3 @@
+2021-05-10 15:28:11,070 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. With the following parameters: login = bob
+2021-05-10 15:28:11,076 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. With the following parameters: userId = 2
+2021-05-10 15:28:11,078 INFO mate.academy.service.OrderServiceImpl:28 Method getAllProductsFromShoppingCart was called with the following parameters: userId = 2. And successfully fetched data from DB
