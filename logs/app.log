@@ -1,5 +1,0 @@
-2021-05-11 11:20:06,493 ERROR mate.academy.Main:21 Can't login, login or password is incorrect
-mate.academy.exception.AuthenticationException: Username or password are incorrect
-	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
-	at mate.academy.Main.main(Main.java:19) [classes/:?]
-2021-05-11 11:20:18,770 INFO mate.academy.service.OrderServiceImpl:31 The data was successfully retrieved form DB for UserID: 2
