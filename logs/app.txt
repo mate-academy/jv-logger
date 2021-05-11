@@ -1,4 +1,0 @@
-2021-05-07 09:18:19,150 ERROR mate.academy.Main:21 Can't login.
-mate.academy.exception.AuthenticationException: Username or password are incorrect!Login:bob
-	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
-	at mate.academy.Main.main(Main.java:19) [classes/:?]
