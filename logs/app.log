@@ -1,9 +1,0 @@
-2021-05-09 18:37:37,564 DEBUG mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login = bob
-2021-05-09 18:37:37,568 DEBUG mate.academy.service.OrderServiceImpl:16 Method completeOrder was called. Params: userId = 2
-2021-05-09 18:37:37,570 INFO  mate.academy.service.OrderServiceImpl:34 Successful fetched data from DB
-2021-05-09 18:37:51,423 DEBUG mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login = bob
-2021-05-09 18:37:51,428 DEBUG mate.academy.service.OrderServiceImpl:16 Method completeOrder was called. Params: userId = 2
-2021-05-09 18:37:51,430 INFO mate.academy.service.OrderServiceImpl:34 Successful fetched data from DB
-2021-05-09 18:38:39,091 DEBUG mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login = bob
-2021-05-09 18:38:39,102 DEBUG mate.academy.service.OrderServiceImpl:16 Method completeOrder was called. Params: userId = 2
-2021-05-09 18:38:39,103 INFO mate.academy.service.OrderServiceImpl:34 Successful fetched data from DB
