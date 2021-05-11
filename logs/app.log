@@ -1,9 +1,5 @@
-2021-05-10 19:51:17,504 INFO mate.academy.Main:15 Method login was called. Login: bob
-2021-05-10 19:51:17,507 INFO mate.academy.Main:17 Method completeOrder was called. UserID: 2
-2021-05-10 19:51:17,507 INFO mate.academy.Main:34 The data was successfully retrieved form DB for UserID: 2
-2021-05-10 19:52:00,775 INFO mate.academy.Main:15 Method login was called. Login: bob
-2021-05-10 19:52:00,780 INFO mate.academy.Main:17 Method completeOrder was called. UserID: 2
-2021-05-10 19:52:00,781 INFO mate.academy.Main:34 The data was successfully retrieved form DB for UserID: 2
-2021-05-10 19:53:12,339 INFO mate.academy.Main:15 Method login was called. Login: bob
-2021-05-10 19:53:12,342 INFO mate.academy.Main:17 Method completeOrder was called. UserID: 2
-2021-05-10 19:53:12,348 INFO mate.academy.Main:34 The data was successfully retrieved form DB for UserID: 2
+2021-05-11 11:20:06,493 ERROR mate.academy.Main:21 Can't login, login or password is incorrect
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2021-05-11 11:20:18,770 INFO mate.academy.service.OrderServiceImpl:31 The data was successfully retrieved form DB for UserID: 2
