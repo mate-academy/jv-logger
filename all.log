@@ -1,3 +1,0 @@
-2021-05-10 19:16:50.071 [main] INFO  mate.academy.service.AuthenticationServiceImpl - method login() was called. Params: Login = bob
-2021-05-10 19:16:50.085 [main] INFO  mate.academy.service.OrderServiceImpl - Method Order() was called. Params: userId = 2
-2021-05-10 19:16:50.088 [main] INFO  mate.academy.service.OrderServiceImpl - Data were got successful from DB. Params: userId = 2
