@@ -19,7 +19,7 @@ public class Main {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
             logger.error("Wrong login or password ", e);
-            throw new RuntimeException("Wrong login or password, e");
+            return;
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
