@@ -1,8 +1,0 @@
-2021-04-28 15:38:51,671 INFO mate.academy.Main:16 main method was called
-2021-04-28 15:38:51,671 DEBUG mate.academy.service.AuthenticationServiceImpl:15 login method was called. Params: login = bob
-2021-04-28 15:38:51,671 DEBUG mate.academy.service.OrderServiceImpl:16 completeOrder method was called. Params: userId = 2
-2021-04-28 15:38:51,671 DEBUG mate.academy.service.OrderServiceImpl:33 getAllProductsFromShoppingCart method was called. Params: userId = 2
-2021-05-11 10:53:37,817 INFO mate.academy.Main:16 main method was called
-2021-05-11 10:53:37,825 DEBUG mate.academy.service.AuthenticationServiceImpl:14 login method was called. Params: login = bob
-2021-05-11 10:53:37,825 DEBUG mate.academy.service.OrderServiceImpl:16 completeOrder method was called. Params: userId = 2
-2021-05-11 10:53:37,825 DEBUG mate.academy.service.OrderServiceImpl:33 getAllProductsFromShoppingCart method was called. Params: userId = 2
