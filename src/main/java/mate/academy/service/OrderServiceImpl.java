@@ -12,7 +12,6 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        // TODO: add log message about method completeOrder was called
         logger.debug("\"completeOrder\" method was called. Input parameter: userId = {}",
                 userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
@@ -30,7 +29,6 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        // TODO: add log message about successful fetched data from DB
         logger.debug("List of products was successfully retrieved from DB");
         return products;
     }
