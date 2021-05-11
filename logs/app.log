@@ -1,0 +1,27 @@
+2021-05-11 12:55:22,491 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2021-05-11 12:55:22,498 INFO mate.academy.service.OrderServiceImpl:16 method complete Order was called
+2021-05-11 12:55:22,501 INFO mate.academy.service.OrderServiceImpl:33 data from DB successfully fetched
+2021-05-11 12:57:41,450 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2021-05-11 12:57:41,450 INFO mate.academy.service.OrderServiceImpl:16 method complete Order was called
+2021-05-11 12:57:41,450 INFO mate.academy.service.OrderServiceImpl:33 data from DB successfully fetched
+2021-05-11 13:02:29,564 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2021-05-11 13:02:29,570 INFO mate.academy.service.OrderServiceImpl:16 method complete Order was called
+2021-05-11 13:02:29,571 INFO mate.academy.service.OrderServiceImpl:33 data from DB successfully fetched
+2021-05-11 13:03:07,006 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2021-05-11 13:03:07,012 INFO mate.academy.service.OrderServiceImpl:16 method complete Order was called
+2021-05-11 13:03:07,013 INFO mate.academy.service.OrderServiceImpl:33 data from DB successfully fetched
+2021-05-11 13:04:57,244 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2021-05-11 13:04:57,252 INFO mate.academy.service.OrderServiceImpl:16 method complete Order was called
+2021-05-11 13:04:57,254 INFO mate.academy.service.OrderServiceImpl:33 data from DB successfully fetched
+2021-05-11 13:06:04.583 [main] INFO  mate.academy.service.AuthenticationServiceImpl - method login was called
+2021-05-11 13:06:04.590 [main] INFO  mate.academy.service.OrderServiceImpl - method complete Order was called
+2021-05-11 13:06:04.591 [main] INFO  mate.academy.service.OrderServiceImpl - data from DB successfully fetched
+2021-05-11 13:11:36.492 [main] INFO  mate.academy.service.AuthenticationServiceImpl - method login was called
+2021-05-11 13:11:36.499 [main] INFO  mate.academy.service.OrderServiceImpl - method complete Order was called
+2021-05-11 13:11:36.501 [main] INFO  mate.academy.service.OrderServiceImpl - data from DB successfully fetched
+2021-05-11 13:11:59.766 [main] INFO  mate.academy.service.AuthenticationServiceImpl - method login was called
+2021-05-11 13:11:59.773 [main] INFO  mate.academy.service.OrderServiceImpl - method complete Order was called
+2021-05-11 13:11:59.775 [main] INFO  mate.academy.service.OrderServiceImpl - data from DB successfully fetched
+2021-05-11 13:12:18.629 [main] INFO  mate.academy.service.AuthenticationServiceImpl:14- method login was called
+2021-05-11 13:12:18.636 [main] INFO  mate.academy.service.OrderServiceImpl:16- method complete Order was called
+2021-05-11 13:12:18.638 [main] INFO  mate.academy.service.OrderServiceImpl:33- data from DB successfully fetched
