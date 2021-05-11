@@ -18,9 +18,10 @@ public class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
-            orderService.completeOrder(user.getUserId());
         } catch (AuthenticationException e) {
             logger.error("Can't login", e);
+            return;
         }
+        orderService.completeOrder(user.getUserId());
     }
 }
