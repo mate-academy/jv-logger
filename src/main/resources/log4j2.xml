@@ -12,7 +12,6 @@
     </Appenders>
     <Loggers>
         <Logger name ="mate.academy" level="info" additivity="false">
-            <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Logger>
         <Root level="error">

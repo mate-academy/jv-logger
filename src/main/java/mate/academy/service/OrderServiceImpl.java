@@ -24,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("method getAllProductsFromShoppingCart was called");
+        logger.info("Products was successfully fetched from DB");
         return products;
     }
 }

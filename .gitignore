@@ -1,4 +1,4 @@
 .idea
 logs
 target
-jv-logger.iml
+*.iml
