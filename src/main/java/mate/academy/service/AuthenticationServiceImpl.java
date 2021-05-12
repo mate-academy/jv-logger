@@ -11,7 +11,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        //TODO: add corresponding log message about method login was called
         logger.debug("Login was called. Login{}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
