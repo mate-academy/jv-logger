@@ -13,7 +13,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("Method-procedure main() was called");
+        logger.debug("Method-procedure main() was called");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
