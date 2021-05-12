@@ -1,0 +1,10 @@
+12:04:24.175 [main] INFO mate.academy.Main:17 - Method-procedure main() was called
+12:04:24.189 [main] INFO mate.academy.service.AuthenticationServiceImpl:13 - Method-function login() was called. Params: login = bob
+12:04:24.191 [main] INFO mate.academy.service.OrderServiceImpl:15 - Method-function completeOrder() was called. Params: userId = 2
+12:04:24.194 [main] INFO mate.academy.service.OrderServiceImpl:27 - Method-function getAllProductsFromShoppingCart() has successful fetched data from DB. Params: userID = 2
+12:04:53.252 [main] INFO mate.academy.Main:17 - Method-procedure main() was called
+12:04:53.261 [main] INFO mate.academy.service.AuthenticationServiceImpl:13 - Method-function login() was called. Params: login = bob
+12:04:53.263 [main] ERROR mate.academy.Main:23 - Exception at method-function login()
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:21) [classes/:?]
