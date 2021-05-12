@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO">
+<Configuration status="info">
     <Appenders>
         <Console name="LogToConsole" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
         </Console>
-        <File name="LogToConsole" fileName="logs/app.log">
-            <PatternLayot>
-                <Pattern>%d %c %m%n</Pattern>
-            </PatternLayot>
+        <File name="LogToFile" filename="logs/app.txt">
+            <PatternLayout>
+                <Pattern>%d %p %c:%L %m%n</Pattern>
+            </PatternLayout>
         </File>
     </Appenders>
     <Loggers>
-        <Logger name ="mate.academy" level="info" additivity="false">
+        <Logger name="mate.academy" level="info" additivity="false">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Logger>
         <Root level="error">
-            <AppenderRef ref="LogTofile"/>
+            <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Root>
     </Loggers>
