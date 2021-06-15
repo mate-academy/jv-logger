@@ -12,6 +12,7 @@ public class Main {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
+            String test = "test";
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
             e.printStackTrace();
