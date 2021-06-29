@@ -1,0 +1,23 @@
+15:01:44.903 [main] INFO  mate.academy.service.AuthenticationServiceImpl - method login was called
+15:06:01.322 [main] INFO  mate.academy.service.AuthenticationServiceImpl - method login was called
+15:06:01.327 [main] INFO  mate.academy.service.OrderServiceImpl - method completeOrder was called
+15:06:01.330 [main] INFO  mate.academy.service.OrderServiceImpl - Data from DB fetched successful
+2021-06-15 15:10:31,255 INFO mate.academy.service.AuthenticationServiceImpl:12 method login was called
+"2021-06-15 15:10:31,262 INFO mate.academy.service.OrderServiceImpl:15 method completeOrder was called
+"2021-06-15 15:10:31,264 INFO mate.academy.service.OrderServiceImpl:31 Data from DB fetched successful
+"2021-06-15 15:12:59,304 INFO mate.academy.service.AuthenticationServiceImpl:12 method login was called. Params: login = bob
+"2021-06-15 15:12:59,311 INFO mate.academy.service.OrderServiceImpl:15 method completeOrder was called
+"2021-06-15 15:12:59,316 INFO mate.academy.service.OrderServiceImpl:31 Data from DB fetched successful
+"2021-06-15 15:14:19,620 INFO mate.academy.service.AuthenticationServiceImpl:12 method login was called. Params: login = bob
+"2021-06-15 15:14:19,623 INFO mate.academy.service.OrderServiceImpl:15 method completeOrder was called. Params: userId = 2
+"2021-06-15 15:14:19,625 INFO mate.academy.service.OrderServiceImpl:31 Data from DB fetched successful. Params: userId = 2
+"2021-06-15 15:20:23,827 INFO mate.academy.service.AuthenticationServiceImpl:12 method login was called. Params: login = bob
+"2021-06-15 15:20:23,842 INFO mate.academy.service.OrderServiceImpl:15 method completeOrder was called. Params: userId = 2
+"2021-06-15 15:20:23,846 INFO mate.academy.service.OrderServiceImpl:31 Data from DB fetched successful. Params: userId = 2
+"2021-06-15 15:23:27,631 INFO mate.academy.service.AuthenticationServiceImpl:12 method login was called. Params: login = bob
+"2021-06-15 15:23:27,638 INFO mate.academy.service.OrderServiceImpl:15 method completeOrder was called. Params: userId = 2
+"2021-06-15 15:23:27,641 INFO mate.academy.service.OrderServiceImpl:31 Data from DB fetched successful. Params: userId = 2
+"2021-06-15 15:24:15,357 INFO mate.academy.service.AuthenticationServiceImpl:12 method login was called. Params: login = bob
+"2021-06-15 15:24:15,363 INFO mate.academy.service.OrderServiceImpl:15 method completeOrder was called. Params: userId = 2
+"2021-06-15 15:24:15,367 INFO mate.academy.service.OrderServiceImpl:31 Data from DB fetched successful. Params: userId = 2
+"
