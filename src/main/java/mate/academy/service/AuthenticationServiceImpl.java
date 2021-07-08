@@ -2,6 +2,7 @@ package mate.academy.service;
 
 import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
