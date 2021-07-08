@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Login or/and password is not correct.", e);
+            logger.error("Can't authenticate", e);
             return;
         }
         logger.info("Authentication was completed successfully.");
