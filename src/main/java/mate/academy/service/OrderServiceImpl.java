@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.util.List;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,7 +12,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.debug( "method completeOrder was called with userId: {}", userId);
+        logger.debug("method completeOrder was called with userId: {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
