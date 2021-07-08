@@ -17,6 +17,7 @@ public class Main {
             e.printStackTrace();
             return;
         }
+
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
     }
