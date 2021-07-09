@@ -6,9 +6,6 @@ public class Product {
     private String title;
     private BigDecimal price;
 
-    public Product() {
-    }
-
     public Product(String title, BigDecimal price) {
         this.title = title;
         this.price = price;
