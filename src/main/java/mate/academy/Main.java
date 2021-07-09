@@ -21,7 +21,6 @@ public class Main {
             logger.error("Can't authenticate", e);
             return;
         }
-        logger.info("Authentication was completed successfully.");
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
     }

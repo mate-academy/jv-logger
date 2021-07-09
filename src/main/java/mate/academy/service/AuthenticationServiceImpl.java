@@ -10,12 +10,12 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.debug("Method 'login' was called. Params: login = {}",login);
+        logger.debug("Method 'login' was called. Params: login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
         }
-        logger.info("Method 'login' successfully completed. Params: login = {}",login);
+        logger.info("Method 'login' successfully completed. Params: login = {}", login);
         return user;
     }
 
@@ -23,7 +23,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         logger.debug("Method 'findByLogin' was started ");
         User user = new User(login, "1234");
         user.setUserId(2L);
-        logger.info("User was found: {}",login);
         return user;
     }
 }
