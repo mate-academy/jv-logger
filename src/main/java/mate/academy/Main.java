@@ -20,7 +20,7 @@ public class Main {
             OrderService orderService = new OrderServiceImpl();
             orderService.completeOrder(user.getUserId());
         } catch (AuthenticationException e) {
-            logger.log(Level.ERROR, "Username or password are incorrect");
+            logger.log(Level.WARN, "Username or password are incorrect");
         }
     }
 }
