@@ -1,6 +1,5 @@
 package mate.academy.service;
 
-import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -10,11 +9,11 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
 
     @Override
-    public User login(String login, String password) throws AuthenticationException {
+    public User login(String login, String password) {
         logger.log(Level.INFO, "Method login was called. Params: login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
-            throw new AuthenticationException("Username or password are incorrect");
+            logger.log(Level.ERROR, "Username or password are incorrect");
         }
         return user;
     }
