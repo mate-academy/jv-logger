@@ -7,7 +7,6 @@ import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
 import org.apache.logging.log4j.LogManager;
-
 import org.apache.logging.log4j.Logger;
 
 public class Main {
