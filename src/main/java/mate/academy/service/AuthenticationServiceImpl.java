@@ -10,7 +10,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        LOGGER.debug("Method login was called. Params: login={}", login);
+        LOGGER.debug("Method login was called. Params: login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
@@ -19,7 +19,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        LOGGER.debug("Method findByLogin was called. Params: login={}", login);
+        LOGGER.debug("Method findByLogin was called. Params: login = {}", login);
         User user = new User(login, "1234");
         user.setUserId(2L);
         return user;
