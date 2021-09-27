@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.warn("Can't login, login value or password are invalid ", e);
+            logger.error("Can't login, login value or password are invalid ", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
