@@ -19,9 +19,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        logger.info("User with login: " + login + " successfully found");
         User user = new User(login, "1234");
         user.setUserId(2L);
+        logger.info("User with login: " + login + " successfully found");
         return user;
     }
 }
