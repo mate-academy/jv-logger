@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("getAllProductsFromShoppingCart method was called. "
-                + "Products: {}", products.size());
+                + "Params: userId - {}, products_count - {}", userId, products.size());
         return products;
     }
 }
