@@ -2,7 +2,6 @@ package mate.academy.service;
 
 import java.math.BigDecimal;
 import java.util.List;
-import mate.academy.Main;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
@@ -22,7 +21,6 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
-
 
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
