@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Method login doesn't work successfully", e);
+            logger.error("Can't login: ", e.getMessage());
             return;
         }
         OrderService orderService = new OrderServiceImpl();
