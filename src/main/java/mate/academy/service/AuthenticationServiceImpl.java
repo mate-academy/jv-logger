@@ -9,7 +9,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
 
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Login method was called. Params: login = {}", login);
+        logger.debug("Login method was called. Params: login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             logger.error("User's password is incorrect. Parameter: login {}", login);
@@ -19,7 +19,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        logger.info("findByLogin method was called. Params: login {}", login);
+        logger.debug("findByLogin method was called. Params: login {}", login);
         User user = new User(login, "1234");
         user.setUserId(2L);
         return user;
