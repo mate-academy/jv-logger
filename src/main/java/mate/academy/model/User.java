@@ -1,6 +1,10 @@
 package mate.academy.model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class User {
+    private static final Logger logger = LogManager.getLogger(User.class);
     private Long userId;
     private String login;
     private String password;
@@ -11,6 +15,7 @@ public class User {
     }
 
     public Long getUserId() {
+        logger.info("Getter for userID returned: " + userId);
         return userId;
     }
 
@@ -19,6 +24,7 @@ public class User {
     }
 
     public String getLogin() {
+        logger.info("Getter for login returned: " + login);
         return login;
     }
 
@@ -31,6 +37,7 @@ public class User {
     }
 
     public void setPassword(String password) {
+        logger.info("Getter for password was called");
         this.password = password;
     }
 }
