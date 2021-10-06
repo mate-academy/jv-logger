@@ -1,11 +1,8 @@
 package mate.academy.model;
 
 import java.util.List;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Order {
-    private static final Logger logger = LogManager.getLogger(Product.class);
     private Long orderId;
     private List<Product> products;
     private Long userId; // the identifier of user who complete the order
@@ -19,7 +16,6 @@ public class Order {
     }
 
     public Long getOrderId() {
-        logger.info("Getter for orderID returned: " + orderId);
         return orderId;
     }
 
@@ -28,7 +24,6 @@ public class Order {
     }
 
     public List<Product> getProducts() {
-        logger.info("Getter for products returned: " + products);
         return products;
     }
 
@@ -37,7 +32,6 @@ public class Order {
     }
 
     public Long getUserId() {
-        logger.info("Getter for userID returned: " + userId);
         return userId;
     }
 
