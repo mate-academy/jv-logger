@@ -1,7 +1,6 @@
-
-2021-11-24 16:52:13,169 INFO:12 mate.academy.service.AuthenticationServiceImpl login method was called. Param: login bob
-2021-11-24 16:52:13,169 INFO:12 mate.academy.service.AuthenticationServiceImpl login method was called. Param: login bob
-2021-11-24 16:52:13,174 INFO:14 mate.academy.service.OrderServiceImpl completeOrder method was called. Param: userId 2
-2021-11-24 16:52:13,174 INFO:14 mate.academy.service.OrderServiceImpl completeOrder method was called. Param: userId 2
-2021-11-24 16:52:13,175 INFO:26 mate.academy.service.OrderServiceImpl data were successfully obtained from the BD for userById 2
-2021-11-24 16:52:13,175 INFO:26 mate.academy.service.OrderServiceImpl data were successfully obtained from the BD for userById 2
+2021-11-24 16:59:12,332 INFO:13 mate.academy.service.AuthenticationServiceImpl login method was called. Param: login bob
+2021-11-24 16:59:12,332 INFO:13 mate.academy.service.AuthenticationServiceImpl login method was called. Param: login bob
+2021-11-24 16:59:12,335 INFO:15 mate.academy.service.OrderServiceImpl completeOrder method was called. Param: userId 2
+2021-11-24 16:59:12,335 INFO:15 mate.academy.service.OrderServiceImpl completeOrder method was called. Param: userId 2
+2021-11-24 16:59:12,337 INFO:27 mate.academy.service.OrderServiceImpl data were successfully obtained from the BD for userById 2
+2021-11-24 16:59:12,337 INFO:27 mate.academy.service.OrderServiceImpl data were successfully obtained from the BD for userById 2
