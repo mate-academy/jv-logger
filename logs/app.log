@@ -1,3 +1,0 @@
-2021-11-25 16:15:54,525 INFO mate.academy.service.AuthenticationService:13 login method was called. Params: login = bob
-2021-11-25 16:15:54,532 INFO mate.academy.service.OrderService:15 completeOrder method was called. Params: useId = 2
-2021-11-25 16:15:54,536 INFO mate.academy.service.OrderService:31 Data from DB fetched successfully for user 2
