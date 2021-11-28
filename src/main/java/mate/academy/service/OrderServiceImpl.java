@@ -28,7 +28,7 @@ public class OrderServiceImpl implements OrderService {
         logger.info("getAllProductsFromShoppingCart: successful fetched data. "
                 + "Data: userId {}, products: {} ", userId, products.stream()
                 .map(Product::getTitle)
-                .collect(Collectors.joining("; ")));
+                .collect(Collectors.joining(", ")));
         return products;
     }
 }
