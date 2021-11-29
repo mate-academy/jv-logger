@@ -28,9 +28,7 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("Data was successfully fetched. Params: userId = {}, products = {}",
-                userId, products.stream()
-                .map(Product::getTitle)
-                        .collect(Collectors.joining(",")));
+                userId, products);
         return products;
     }
 }
