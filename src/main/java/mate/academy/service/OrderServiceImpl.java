@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
     private Logger logger = LogManager.getLogger();
+
     @Override
     public Order completeOrder(Long userId) {
         logger.info("completeOrder method was called. Params: userId = {}", userId);
