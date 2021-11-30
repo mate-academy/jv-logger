@@ -9,9 +9,11 @@
         </File>
     </Appenders>
     <Loggers>
-        <Root level="INFO">
+        <Logger name="mate.academy" level="INFO" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="LogToFile"/>
+        </Logger>
+        <Root level="INFO">
         </Root>
     </Loggers>
 </Configuration>

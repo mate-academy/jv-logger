@@ -28,8 +28,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Method getAllProductsFromShoppingCart was called with userId = {}"
-                + System.lineSeparator() + "Product fetch successful...", userId);
+        logger.info("Method getAllProductsFromShoppingCart was called for userId = {}. "
+                + "Number of products fetched: {}", userId, products.size());
         return products;
     }
 }
