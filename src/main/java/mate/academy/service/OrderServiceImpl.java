@@ -7,9 +7,9 @@ import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 public class OrderServiceImpl implements OrderService {
     private static final Logger LOGGER = LogManager.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
         LOGGER.info(String.format("start OrderServiceImpl.completeOrder(%d)", userId));
