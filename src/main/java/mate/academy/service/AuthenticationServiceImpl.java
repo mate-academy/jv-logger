@@ -11,9 +11,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Override
     public User login(String login, String password) throws AuthenticationException {
         LOGGER.info(String.format("start AuthenticationServiceImpl.login(%s, ****)", login));
-        if (login.length() <= 1) {
-            LOGGER.warn(String.format("strange login was used: '%s'", login));
-        }
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
