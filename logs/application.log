@@ -1,0 +1,15 @@
+2022-01-17 15:54:25,557 INFO  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
+2022-01-17 15:54:25,557 INFO  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
+2022-01-17 15:54:25,557 INFO  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2022-01-17 15:55:11,775  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
+2022-01-17 15:55:11,775  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
+2022-01-17 15:55:11,775  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2022-01-17 15:55:40,729 INFO  mate.academy.service.AuthenticationServiceImpl 14 login method was called. Login: bob
+2022-01-17 15:55:40,729 INFO  mate.academy.service.OrderServiceImpl 15 completeOrder method was called. UserId: 2
+2022-01-17 15:55:40,729 INFO  mate.academy.service.OrderServiceImpl 32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2022-01-17 15:57:12,749 INFO  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
+2022-01-17 15:57:12,752 INFO  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
+2022-01-17 15:57:12,753 INFO  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2022-01-17 16:15:48,117 INFO  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
+2022-01-17 16:15:48,117 INFO  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
+2022-01-17 16:15:48,117 INFO  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
