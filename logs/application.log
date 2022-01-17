@@ -1,9 +1,0 @@
-2022-01-17 16:22:47,477 INFO  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
-2022-01-17 16:22:47,477 INFO  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
-2022-01-17 16:22:47,477 INFO  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
-2022-01-17 18:02:13,206 INFO  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
-2022-01-17 18:02:13,206 INFO  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
-2022-01-17 18:02:13,206 INFO  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
-2022-01-17 18:04:50,107 INFO  m.a.s.AuthenticationServiceImpl.java:14 login method was called. Login: bob
-2022-01-17 18:04:50,107 INFO  m.a.s.OrderServiceImpl.java:15 completeOrder method was called. UserId: 2
-2022-01-17 18:04:50,107 INFO  m.a.s.OrderServiceImpl.java:32 data was fetched from DB. Data: [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
