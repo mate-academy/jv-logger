@@ -10,19 +10,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    private static Logger logger = LogManager.getLogger(Main.class.getName());
+    private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("Main.main starting...");
+        logger.debug("Main thread starting...");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        logger.info("authenticationService created");
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error("Can't login", e);
             return;
         }
+        logger.debug("user '{}' logged in", user.getLogin());
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
     }
