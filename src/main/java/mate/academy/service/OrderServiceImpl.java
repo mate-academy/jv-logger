@@ -33,8 +33,8 @@ public class OrderServiceImpl implements OrderService {
         if (logger.isDebugEnabled()) {
             logger.debug("getAllProductsFromShoppingCart returns products: {}",
                     products.stream()
-                    .map(product -> "{title= " + product.getTitle() +
-                            ", price= " + product.getPrice() + "}")
+                    .map(product -> "{title= " + product.getTitle()
+                            + ", price= " + product.getPrice() + "}")
                             .reduce((s1, s2) -> s1 + System.lineSeparator() + s2)
                             .orElse("Nothing"));
         }
