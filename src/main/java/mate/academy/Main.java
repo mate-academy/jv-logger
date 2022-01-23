@@ -13,7 +13,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.debug("Main thread starting...");
+        logger.info("Main thread starting...");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
@@ -22,8 +22,9 @@ public class Main {
             logger.error("Can't login", e);
             return;
         }
-        logger.debug("user '{}' logged in", user.getLogin());
+        logger.info("user '{}' logged in", user.getLogin());
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
+        logger.info("Main thread stopping...");
     }
 }
