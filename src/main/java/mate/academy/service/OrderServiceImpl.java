@@ -22,6 +22,7 @@ public class OrderServiceImpl implements OrderService {
         order.setOrderId(1L);
         return order;
     }
+
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
         // NOTE: In production ready code this method should fetch data from DB
         // For test purpose we simplify this method and return dummy data
@@ -34,4 +35,3 @@ public class OrderServiceImpl implements OrderService {
         return products;
     }
 }
-
