@@ -20,7 +20,7 @@ public class Main {
             OrderService orderService = new OrderServiceImpl();
             orderService.completeOrder(user.getUserId());
         } catch (AuthenticationException e) {
-            logger.error("Can't log", e);
+            logger.error("Can't log this item", e);
         }
     }
 }
