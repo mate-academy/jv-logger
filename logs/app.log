@@ -1,0 +1,3 @@
+2022-02-25 03:33:59,610 INFO mate.academy.service.AuthenticationServiceImpl Method login was called. Params: login=bob
+2022-02-25 03:33:59,611 INFO mate.academy.service.OrderServiceImpl completeOrder method well by called. Params: completeOrder=2
+2022-02-25 03:33:59,612 INFO mate.academy.service.OrderServiceImpl data successful fetched from data base. Params: getAllProductsFromShoppingCart=2
