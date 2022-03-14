@@ -20,7 +20,7 @@ public class Main {
             user = authenticationService.login(login, "1234");
         } catch (AuthenticationException e) {
             logger.error("AuthenticationException: " + e + System.lineSeparator()
-                    + "Login: " + login);
+                    + "Login: " + login, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
