@@ -1,3 +1,4 @@
 .idea/*
 *.iml
 target/*
+logs/jv_logger.log
