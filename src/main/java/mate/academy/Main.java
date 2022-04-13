@@ -20,7 +20,7 @@ public class Main {
             user = authenticationService.login(exampleUserName, "1234");
         } catch (AuthenticationException e) {
             logger.error("Username or password are incorrect. Username: '{}'",
-                    exampleUserName);
+                    exampleUserName, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
