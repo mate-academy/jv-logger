@@ -1,4 +1,4 @@
 .idea/*
 *.iml
-src/main/resources/log4j2.xml
+logs/*
 target/*
