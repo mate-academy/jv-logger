@@ -6,18 +6,24 @@ import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
+        logger.trace("Entering application.");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
-            return;
+            logger.error("Authentication is bed exception = {}", e);
+            throw new RuntimeException("Authentication is bed", e);
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
+        logger.trace("Exiting application.");
     }
 }
