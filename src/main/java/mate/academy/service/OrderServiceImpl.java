@@ -31,11 +31,7 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = List.of(iphone, macBook, xiaomi);
         //List<Product> products = null; //imitation no connection with DB
         // TODO: add log message about successful fetched data from DB
-        if (products != null) {
-            logger.debug("Data from the DB received successfully: Product = {}", products);
-        } else {
-            logger.error("Data from the DB not received");
-        }
+        logger.debug("Data from the DB received successfully: Product = {}", products);
         return products;
     }
 }
