@@ -13,17 +13,16 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
-        logger.trace("Entering application.");
+        logger.info("Entering application.");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
+        User user = null;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Authentication is bed exception = {}", e);
-            throw new RuntimeException("Authentication is bed", e);
+            logger.error("Authentication is bed, user {} and exception = {}", user, e);
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-        logger.trace("Exiting application.");
+        logger.info("Exiting application.");
     }
 }
