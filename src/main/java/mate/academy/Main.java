@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.debug("Can't find similar login", e);
+            logger.error("Can't find similar login", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
