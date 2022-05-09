@@ -9,7 +9,6 @@ import mate.academy.service.OrderServiceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 public class Main {
     private static final Logger logger = (Logger) LogManager.getLogger(Main.class);
 
