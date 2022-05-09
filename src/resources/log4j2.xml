@@ -16,7 +16,8 @@
             <AppenderRef ref="LogToConsole"/>
         </Logger>
         <Root level="error">
-            <AppenderRef ref="Console"/>
+            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="LogToConsole"/>
         </Root>
     </Loggers>
 </Configuration>
