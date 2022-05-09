@@ -6,8 +6,8 @@
         </Console>
         <File name="LogToFile" fileName="logs/app.log">
             <PatternLayout>
-                <Pattern>%d %p %c:%L %m%n</Pattern>>
-            </PatternLayout>>
+                <Pattern>%d %p %c:%L %m%n</Pattern>
+            </PatternLayout>
         </File>
     </Appenders>
     <Loggers>
