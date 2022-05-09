@@ -4,10 +4,15 @@ import java.math.BigDecimal;
 import java.util.List;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class OrderServiceImpl implements OrderService {
+    private static final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
+        logger.debug("Method completeOrder was called. Params: userId={}", userId);
         // TODO: add log message about method completeOrder was called
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
@@ -24,7 +29,7 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        // TODO: add log message about successful fetched data from DB
+        logger.debug("Data was successfully fetched from DB. Params: userId={}", userId);
         return products;
     }
 }
