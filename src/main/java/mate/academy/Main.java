@@ -19,7 +19,6 @@ public class Main {
             user = authenticationService.login("bob", "1234");
             OrderService orderService = new OrderServiceImpl();
             orderService.completeOrder(user.getUserId());
-            //throw new AuthenticationException("message");
         } catch (AuthenticationException e) {
             logger.error("Authentication was failed, username or password are incorrect", e);
         }
