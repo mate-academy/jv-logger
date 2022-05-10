@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("User login or pass is incorrect.");
+            logger.error("User login or pass is incorrect.", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
