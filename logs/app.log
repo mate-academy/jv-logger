@@ -1,3 +1,0 @@
-2022-05-12 15:19:48,471 INFO mate.academy.service.AuthenticationServiceImpl Method "login" was called. Params: login = bob
-2022-05-12 15:19:48,477 INFO mate.academy.service.OrderServiceImpl Method "completeOrder" was called. Params: userId = 2
-2022-05-12 15:19:48,480 INFO mate.academy.service.OrderServiceImpl Method "getAllProductsFromShoppingCart" successfully fetched data from DB. Params: userId = 2
