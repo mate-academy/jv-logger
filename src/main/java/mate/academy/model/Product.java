@@ -1,6 +1,7 @@
 package mate.academy.model;
 
 import java.math.BigDecimal;
+import java.util.StringJoiner;
 
 public class Product {
     private String title;
@@ -28,5 +29,13 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Product.class.getSimpleName() + "[", "]")
+                .add("title='" + title + "'")
+                .add("price=" + price)
+                .toString();
     }
 }
