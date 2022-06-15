@@ -11,8 +11,8 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
-    public static final String USER_NAME = "bob";
-    public static final String USER_PASSWORD = "12345";
+    private static final String USER_NAME = "bob";
+    private static final String USER_PASSWORD = "12345";
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
