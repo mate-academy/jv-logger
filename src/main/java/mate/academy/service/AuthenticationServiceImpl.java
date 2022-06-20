@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
-    private static final Logger LOGGER = LogManager.getLogger(OrderServiceImpl.class);
+    private static final Logger LOGGER = LogManager.getLogger(AuthenticationService.class);
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
