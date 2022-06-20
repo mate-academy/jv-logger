@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("There is no user with such name and password");
+            logger.error("Login method failed");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
