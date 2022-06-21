@@ -2,7 +2,6 @@ package mate.academy.service;
 
 import java.math.BigDecimal;
 import java.util.List;
-
 import mate.academy.model.Order;
 import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
@@ -10,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
     public static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
         logger.info("completedOrder method: userId = {}", userId);
