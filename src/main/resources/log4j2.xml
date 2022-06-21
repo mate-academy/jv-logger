@@ -1,0 +1,17 @@
+<Configuration status="INFO">
+    <Appenders>
+        <File name="LogToFile" fileName="logs/jv-logger.log">
+            <PatternLayout>
+                <Pattern>%d %p %c:%L %n%m</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="mate.academy" level="info" additivity="false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="LogToFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
