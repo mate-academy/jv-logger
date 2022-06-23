@@ -17,7 +17,7 @@ public class Main {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(LOGIN, "1234");
         } catch (AuthenticationException e) {
             logger.error("Cannot login. Params: login={}", LOGIN);
             return;
