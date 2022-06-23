@@ -2,6 +2,7 @@ package mate.academy.service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.stream.Collectors;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
@@ -25,7 +26,9 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("getAllProductsFromShoppingCart method was called. "
-                + "Data from DB was fetched successfully. Params: userId = {}", userId);
+                + "Data from DB was fetched successfully. Params: userId = {}, products: {}",
+                userId, products.stream().map(i -> "\"" + i.getTitle() + "\"-$"
+                        + i.getPrice()).collect(Collectors.joining("; ")));
         return products;
     }
 }
