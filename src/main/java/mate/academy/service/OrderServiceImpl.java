@@ -27,8 +27,7 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("getAllProductsFromShoppingCart method was called. "
                 + "Data from DB was fetched successfully. Params: userId = {}, products: {}",
-                userId, products.stream().map(i -> "\"" + i.getTitle() + "\"-$"
-                        + i.getPrice()).collect(Collectors.joining("; ")));
+                userId, products.stream().map(Product::toString).collect(Collectors.joining("; ")));
         return products;
     }
 }
