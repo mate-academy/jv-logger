@@ -13,7 +13,6 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.trace("Main jv-logger started");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
@@ -22,9 +21,7 @@ public class Main {
             logger.error("Login failed", e);
             return;
         }
-        logger.info("Login of user={} was successful", user.getLogin());
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-        logger.trace("Main jv-logger stopped");
     }
 }
