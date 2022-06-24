@@ -13,7 +13,6 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("Main method was starting");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
@@ -22,10 +21,7 @@ public class Main {
             logger.error("Can't login", e);
             return;
         }
-        logger.info("User with login {} is logged", user
-                .getLogin());
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-        logger.info("Method main stopping");
     }
 }
