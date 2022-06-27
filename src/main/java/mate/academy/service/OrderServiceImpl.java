@@ -20,7 +20,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
-        logger.info("Method 'getAllProductsFromShoppingCart' was called. Params: userId = {}", userId);
+        logger.info("Method 'getAllProductsFromShoppingCart' "
+                + "was called. Params: userId = {}", userId);
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
