@@ -15,7 +15,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("Method completeOrder was called. Params: userId={}", userId);
+        logger.info("Method completeOrder was called. Params: userId = {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
@@ -27,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(MACBOOK_PRICE));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(XIAOMI_12_PRICE));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Data was successfully fetched from DB. Params: userId={}", userId);
+        logger.info("Data was successfully fetched from DB. Params: userId = {}", userId);
         return products;
     }
 }
