@@ -5,10 +5,7 @@ import java.util.List;
 public class Order {
     private Long orderId;
     private List<Product> products;
-    private Long userId; // the identifier of user who complete the order
-
-    public Order() {
-    }
+    private Long userId;
 
     public Order(List<Product> products, Long userId) {
         this.products = products;
