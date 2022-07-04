@@ -18,11 +18,11 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Can't login. Login or password" System.lineSeparator()" are incorrect", e);
+            logger.error("Can't login. Login or password"
+                    + System.lineSeparator() + " are incorrect", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-
     }
 }
