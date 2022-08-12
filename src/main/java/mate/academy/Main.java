@@ -19,7 +19,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("User can`t authenticate. Login: " + login, e);
+            logger.error("User can`t authenticate");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
