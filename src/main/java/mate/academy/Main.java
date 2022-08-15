@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.info("Identification was not passed: " + e);
+            logger.error("Identification was not passed: " + e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
