@@ -14,13 +14,13 @@ public class Main {
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
+        User user = null;
         try {
             user = authenticationService.login("bob", "1234");
-            OrderService orderService = new OrderServiceImpl();
-            orderService.completeOrder(user.getUserId());
         } catch (AuthenticationException e) {
             logger.error("Can't login", e);
         }
+        OrderService orderService = new OrderServiceImpl();
+        orderService.completeOrder(user.getUserId());
     }
 }
