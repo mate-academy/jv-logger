@@ -18,7 +18,6 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-//            e.printStackTrace();
             logger.error("Authentication was failed.");
             return;
         }
