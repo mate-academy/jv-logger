@@ -4,12 +4,12 @@
         <!-- Console appender configuration -->
         <Console name="LogToConsole" target="SYSTEM_OUT">
             <PatternLayout
-                    pattern="%d{HH:mm:ss.SSS} %-5level %c:%L - %m%n" />
+                    pattern="%d{HH:mm:ss.SSS} %p %-5level %c:%L - %m%n" />
         </Console>
         <!-- File appender configuration -->
         <File name="LogToFile" fileName="logs/add.log">
             <PatternLayout
-                    pattern="%d{HH:mm:ss.SSS} %-5level %c:%L - %m%n" />
+                    pattern="%d{HH:mm:ss.SSS} %p %-5level %c:%L - %m%n" />
         </File>
     </Appenders>
     <Loggers>
