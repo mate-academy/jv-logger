@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("not valid username or password. Params: ", e);
+            logger.error("not valid username or password. Params:", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
