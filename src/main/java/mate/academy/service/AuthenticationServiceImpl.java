@@ -14,6 +14,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         logger.info("\"login\" method was called. Parameters: login = {}.", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
+            logger.error("Username or password was entered incorrectly");
             throw new AuthenticationException("Username or password are incorrect");
         }
         return user;
