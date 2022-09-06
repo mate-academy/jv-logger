@@ -12,7 +12,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("Method completeOrder was called. Params: userId={}", userId);
+        logger.info("Method completeOrder was called. Params: userId = {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
@@ -26,7 +26,7 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = List.of(iphone, macBook, xiaomi);
         // TODO: add log message about successful fetched data from DB
         logger.info("Data from DB in the method getAllProductsFromShoppingCart was"
-                        + " successfully obtained. Params: userId={}", userId);
+                        + " successfully obtained. Params: userId = {}", userId);
         return products;
     }
 }
