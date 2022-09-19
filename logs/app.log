@@ -1,0 +1,3 @@
+2022-09-19 11:58:26,443 INFO mate.academy.service.AuthenticationServiceImpl:13 Login method was call with parameter: login - bob, password - 1234
+2022-09-19 11:58:26,447 INFO mate.academy.service.OrderServiceImpl:15 CompleteOrder method was call with parameter: userId - 2
+2022-09-19 11:58:26,448 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB for user with id: userId - 2
