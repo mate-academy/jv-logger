@@ -24,4 +24,5 @@ public class Main {
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
     }
+
 }
