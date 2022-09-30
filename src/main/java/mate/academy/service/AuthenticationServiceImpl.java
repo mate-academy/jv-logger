@@ -12,7 +12,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         logger.info("Method login was called. Params: login={}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
-            logger.warn("Username or password are incorrect. Params: login={}", login);
+            logger.error("Username or password are incorrect. Params: login={}", login);
         }
         return user;
     }
