@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "12345");
         } catch (AuthenticationException e) {
-            logger.warn(e);
+            logger.error(e.getClass() + " was thrown with a message \"" + e.getMessage() + "\"");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
