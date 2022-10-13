@@ -27,7 +27,7 @@ public class OrderServiceImpl implements OrderService {
         logger.info("Method 'getAllProductsFromShoppingCart' was executed. "
                 + System.lineSeparator()
                 + "From user '{}' get {} products: {}",
-                userId,products.size(),products.toString());
+                userId, products.size(), products.toString());
         return products;
     }
 }
