@@ -19,7 +19,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        User user = new User(login, "1232");
+        User user = new User(login, "1234");
         // this user identifier should be set by DB. We will use dummy data for this example
         user.setUserId(2L);
         return user;
