@@ -2,11 +2,11 @@
 <Configuration status="info">
     <Appenders>
         <Console name="ConsoleLog" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36}:%L - %msg%n"/>
         </Console>
         <File name="FileLog" fileName="logs/app.log">
             <PatternLayout>
-                <Pattern>%d %p %c:L %m%n</Pattern>
+                <Pattern>%d %p %c:%L %m%n</Pattern>
             </PatternLayout>
         </File>
     </Appenders>
