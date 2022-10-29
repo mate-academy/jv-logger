@@ -13,7 +13,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("Start program"); //ToDo: remove
+        logger.info("Start program");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
