@@ -10,15 +10,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    public static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger();
+    private static final String DEFAULT_USERNAME = "bob";
+    private static final String DEFAULT_PASSWORD = "1234";
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(DEFAULT_USERNAME, DEFAULT_PASSWORD);
         } catch (AuthenticationException e) {
-            logger.error("Incorrect login", e);
+            logger.error("Can't sign in for login {}", DEFAULT_USERNAME, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
