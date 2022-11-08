@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     private static final String DEFAULT_LOGIN = "bob";
-    private static final String DEFAULT_PASSWORD = "bob";
+    private static final String DEFAULT_PASSWORD = "1234";
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
