@@ -21,7 +21,7 @@ public class Main {
         try {
             user = authenticationService.login(LOGIN, PASSWORD);
         } catch (AuthenticationException e) {
-            logger.error("Login error. Params: login= {}",LOGIN, e);
+            logger.error("Login error. Params: login= {}", LOGIN, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
