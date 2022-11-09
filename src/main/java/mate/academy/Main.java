@@ -11,16 +11,14 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     public static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
-    private static final String LOGIN = "bob";
-    private static final char [] PASSWORD = { '1','2','3','4' };
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login(LOGIN, String.valueOf(PASSWORD));
+            user = authenticationService.login("bob", "12345");
         } catch (AuthenticationException e) {
-            logger.error("Can't identification with login " + LOGIN, e);
+            logger.error("Can't identification user", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
