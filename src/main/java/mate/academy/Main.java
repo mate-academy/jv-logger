@@ -11,14 +11,16 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
+    private static final String LOGIN = "bob";
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(LOGIN, "1234");
         } catch (AuthenticationException e) {
-            logger.error(e);
+            logger.error("Couldn`t login user, username or password are incorrect."
+                    + " Params: login={}",LOGIN,e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();

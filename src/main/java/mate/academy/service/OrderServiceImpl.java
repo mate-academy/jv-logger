@@ -25,6 +25,8 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("Data was successfully fetched from DB. Params: userID = {}", userId);
+        products.forEach(product -> logger.info("Product data params: title = {}, price = {}",
+                product.getTitle(), product.getPrice()));
         return products;
     }
 }
