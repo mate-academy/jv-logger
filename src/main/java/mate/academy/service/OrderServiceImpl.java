@@ -1,7 +1,6 @@
 package mate.academy.service;
 
 import java.math.BigDecimal;
-import java.util.Collections;
 import java.util.List;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
