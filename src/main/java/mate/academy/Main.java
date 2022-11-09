@@ -20,7 +20,7 @@ public class Main {
         try {
             user = authenticationService.login(DEFAULT_LOGIN, DEFAULT_PASSWORD);
         } catch (AuthenticationException e) {
-            logger.error("Login error. Params: login = {}",DEFAULT_LOGIN);
+            logger.error("Login error. Params: login = {}", DEFAULT_LOGIN);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
