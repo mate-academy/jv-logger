@@ -25,15 +25,11 @@ public class OrderServiceImpl implements OrderService {
         // NOTE: In production ready code this method should fetch data from DB
         // For test purpose we simplify this method and return dummy data
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
-        logger.info("Data successful fetched from DB. Params: Params: "
-                + "title={}, price={}", iphone.getTitle(), iphone.getPrice());
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
-        logger.info("Data successful fetched from DB. Params: Params: "
-                + "title={}, price={}", macBook.getTitle(), macBook.getPrice());
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
-        logger.info("Data successful fetched from DB. Params: Params: "
-                + "title={}, price={}", xiaomi.getTitle(), xiaomi.getPrice());
         List<Product> products = List.of(iphone, macBook, xiaomi);
+        logger.info("Data successful fetched from DB. Params: userId={}, products={}",
+                userId, products);
         return products;
     }
 }
