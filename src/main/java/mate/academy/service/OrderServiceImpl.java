@@ -24,7 +24,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Data from the DB is fetched. Params: userId = {}", userId);
+        logger.info("Data from the DB is fetched. Params: userId = {}, products={}",
+                userId, products);
         return products;
     }
 }
