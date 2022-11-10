@@ -1,8 +1,6 @@
 package mate.academy.model;
 
 import java.math.BigDecimal;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Product {
     private String title;
