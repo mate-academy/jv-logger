@@ -14,7 +14,6 @@ public class Main {
     private static final String LOGIN = "bob";
     private static final String PASSWORD = "1234";
 
-
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
