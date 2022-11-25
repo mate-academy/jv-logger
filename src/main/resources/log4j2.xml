@@ -5,7 +5,7 @@
             <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
         <File name="LogToFile" filename="logs/app.log">
-            <PatternLayout pattern="%d %p %c %msg%n"/>
+            <PatternLayout pattern="%d [%6p] [%t] %c:%3L - %msg%n"/>
         </File>
     </Appenders>
     <Loggers>
