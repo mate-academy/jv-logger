@@ -19,7 +19,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.debug("Method login called Exception. Params: " + User.class);
+            logger.error("Method login called Exception. Params:  login={}", "bob", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
