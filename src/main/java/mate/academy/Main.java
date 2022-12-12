@@ -13,6 +13,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     private static final String LOGIN = "bob";
     private static final String PASSWORD = "1234";
+
     public static void main(String[] args) {
 
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
