@@ -25,5 +25,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         logger.info("Method findByLogin was called. Params: login={}", login);
         user.setUserId(2L);
         return user;
+
     }
 }
