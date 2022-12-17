@@ -11,7 +11,6 @@
         </File>
     </Appenders>
     <Loggers>
-        <!-- avoid duplicated logs with additivity=false -->
         <Logger name="mate.academy" level="info" additivity="false">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
