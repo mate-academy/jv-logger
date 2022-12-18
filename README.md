@@ -7,3 +7,8 @@
 1. Replace all `e.printStackTrace();`  with corresponding logger methods
 
 [Try to avoid these common mistakes while solving task](https://mate-academy.github.io/jv-program-common-mistakes/java-core/logger/logger)
+Настроить логгер в этом проекте
+Отредактируйте .gitignore файл, чтобы ваш файл с журналами НЕ был отправлен на Github.
+Если у вас есть System.out.println(), замените их все соответствующими методами регистратора.
+Заполните все TODO заявления
+Замените все e.printStackTrace(); соответствующими методами регистратора
