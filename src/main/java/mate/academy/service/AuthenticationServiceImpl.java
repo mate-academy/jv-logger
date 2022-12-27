@@ -20,7 +20,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        User user = new User(login, "1234");
+        User user = new User(login, "12345");
         user.setUserId(2L);
         return user;
     }
