@@ -1,0 +1,14 @@
+<Configuration status="warn">
+    <Appenders>
+        <File name="FileAppender" fileName="logs/app.log">
+            <PatternLayout>
+                <Pattern>%d %p %c{3} %L [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
