@@ -6,11 +6,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
-    public static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+    private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.debug("method login was called, login: {}", login);
+        logger.info("method login was called, login: {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
