@@ -18,8 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Authentication Exception was thrown "
-                    + "Username or password wes incorrect.", e);
+            logger.error("Can`t log user", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
