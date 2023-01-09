@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Configuration status="info">
     <Appenders>
-        <Console name="LogToConsole" target="SYSTEM-OUT">
+        <Console name="LogToConsole" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c:%L - %msg%n"/>
         </Console>
         <File name="LogToFile" fileName="logs/app.log">
