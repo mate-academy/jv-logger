@@ -2,7 +2,6 @@ package mate.academy.service;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.stream.Collectors;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
@@ -13,11 +12,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("Method completeOrder was called.");
+        logger.info("Method completeOrder was called. Params: userId = {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
-        logger.info("Order with ID: " + order.getOrderId() + " is generated to Database.");
         return order;
     }
 
@@ -26,12 +24,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        List<String> productNameList = products
-                .stream()
-                .map(Product::getTitle)
-                .collect(Collectors.toList());
-        logger.info("Order with products: {} was successfully fetched from Database.",
-                productNameList);
+        logger.info("List of products was successfully fetched from Database. "
+                + "Params: userID = {}", userId);
         return products;
     }
 }

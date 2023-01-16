@@ -1,7 +1,6 @@
 package mate.academy;
 
 import mate.academy.exception.AuthenticationException;
-import mate.academy.model.Order;
 import mate.academy.model.User;
 import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
@@ -21,11 +20,9 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Authentication was failed, reason: " + e);
+            logger.error("Authentication failed " + e);
             return;
         }
-        Order order = orderService.completeOrder(user.getUserId());
-        logger.info("User {} created and completed order with ID: {}."
-                + " Program work without errors.", user.getLogin(), order.getOrderId());
+        orderService.completeOrder(user.getUserId());
     }
 }
