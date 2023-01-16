@@ -12,9 +12,9 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
-    private static final AuthenticationService authenticationService  = new AuthenticationServiceImpl();
+    private static final AuthenticationService authenticationService
+            = new AuthenticationServiceImpl();
     private static final OrderService orderService = new OrderServiceImpl();
-
 
     public static void main(String[] args) {
         User user;
@@ -25,6 +25,7 @@ public class Main {
             return;
         }
         Order order = orderService.completeOrder(user.getUserId());
-        logger.info("User {} created and completed order with ID: {}. Program work without errors.", user.getLogin(), order.getOrderId());
+        logger.info("User {} created and completed order with ID: {}."
+                + " Program work without errors.", user.getLogin(), order.getOrderId());
     }
 }

@@ -26,8 +26,12 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        List<String> productNameList = products.stream().map(Product::getTitle).collect(Collectors.toList());
-        logger.info("Order with products: {} was successfully fetched from Database.", productNameList);
+        List<String> productNameList = products
+                .stream()
+                .map(Product::getTitle)
+                .collect(Collectors.toList());
+        logger.info("Order with products: {} was successfully fetched from Database.",
+                productNameList);
         return products;
     }
 }
