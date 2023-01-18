@@ -1,9 +1,0 @@
-2023-01-16 19:15:44,757 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params:=bob
-2023-01-16 19:15:44,765 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userId=2
-2023-01-16 19:15:44,768 INFO mate.academy.service.OrderServiceImpl:32 Method getAllProductsFromShoppingCart was called. Params: userId=2
-2023-01-16 19:21:26,590 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params:=bob
-2023-01-16 19:21:26,599 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userId=2
-2023-01-16 19:21:26,601 INFO mate.academy.service.OrderServiceImpl:32 Method getAllProductsFromShoppingCart was called. Params: userId=2
-2023-01-17 23:00:51,427 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params:=bob
-2023-01-17 23:00:51,438 INFO mate.academy.service.OrderServiceImpl:16 Method completeOrder was called. Params: userId=2
-2023-01-17 23:00:51,440 INFO mate.academy.service.OrderServiceImpl:33 Method getAllProductsFromShoppingCart was called. Params: userId=2
