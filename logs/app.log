@@ -1,0 +1,12 @@
+2023-01-19 00:20:52,246 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with param: login = bob
+2023-01-19 00:20:52,262 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. With user id = 2
+2023-01-19 00:20:52,262 INFO mate.academy.service.OrderServiceImpl:31 The data from DB was successful fetched.
+2023-01-19 00:21:10,656 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with param: login = bob
+2023-01-19 00:21:10,673 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. With user id = 2
+2023-01-19 00:21:10,673 INFO mate.academy.service.OrderServiceImpl:31 The data from DB was successful fetched.
+2023-01-19 00:21:19,203 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with param: login = bob
+2023-01-19 00:21:19,203 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. With user id = 2
+2023-01-19 00:21:19,203 INFO mate.academy.service.OrderServiceImpl:31 The data from DB was successful fetched.
+2023-01-19 00:22:49,356 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with param: login = bob
+2023-01-19 00:22:49,356 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. With user id = 2
+2023-01-19 00:22:49,356 INFO mate.academy.service.OrderServiceImpl:31 The data from DB was successful fetched.
