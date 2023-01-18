@@ -9,9 +9,10 @@ import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
-        logger.debug("method completeOrder was called. Params: user id = {}", userId );
+        logger.debug("method completeOrder was called. Params: user id = {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
