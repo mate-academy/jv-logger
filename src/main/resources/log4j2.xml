@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="ConfigTest" status="info">
+    <Appenders>
+        <File name="AuthenticationServiceLogToFile" fileName="logs/AuthenticationService.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="OrderServiceLogToFile" fileName="logs/OrderService.log">
+            <PatternLayout pattern="%d %p %C{1.}:%L %m%n"/>
+        </File>
+        <File name="MainLogToFile" fileName="logs/Main.log">
+            <PatternLayout pattern="%d %p %C{1.}:%L %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="mate.academy.service.AuthenticationServiceImpl" level="debug" additivity="false">
+            <AppenderRef ref="AuthenticationServiceLogToFile"/>
+        </Logger>
+        <Logger name="mate.academy.service.OrderServiceImpl" level="info" additivity="false">
+            <AppenderRef ref="OrderServiceLogToFile"/>
+        </Logger>
+        <Logger name="mate.academy.Main" level="info" additivity="false">
+            <AppenderRef ref="MainLogToFile"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="AuthenticationServiceLogToFile"/>
+            <AppenderRef ref="OrderServiceLogToFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
