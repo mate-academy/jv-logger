@@ -12,7 +12,6 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        // TODO: add log message about method completeOrder was called
         logger.info("completeOrder method was called. Params: userId={}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
