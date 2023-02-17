@@ -1,3 +1,0 @@
-2023-02-17 17:58:07,820 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login bob
-2023-02-17 17:58:07,825 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: ID 2
-2023-02-17 17:58:07,827 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB. Params: ID 2
