@@ -16,7 +16,6 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
-
         return order;
     }
 
