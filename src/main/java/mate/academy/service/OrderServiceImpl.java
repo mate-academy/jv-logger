@@ -12,10 +12,11 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
+        logger.info("completeOrder has been done for userId: {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
-        logger.info("completeOrder has been done for userId: {}", userId);
+
         return order;
     }
 
