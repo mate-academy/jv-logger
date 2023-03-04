@@ -1,0 +1,7 @@
+2023-03-04 10:18:39,004 INFO mate.academy.service.AuthenticationServiceImpl:14 login method was called!. Params: login=bob
+2023-03-04 10:23:18,011 INFO mate.academy.service.AuthenticationServiceImpl:14 login method was called!. Params: login=bob
+2023-03-04 10:23:18,013 INFO mate.academy.service.OrderServiceImpl:16 method completeOrder was called. Params: userId=2
+2023-03-04 10:23:18,014 INFO mate.academy.service.OrderServiceImpl:34 successful fetched data from DB. Params: userId=2
+2023-03-04 10:23:35,783 INFO mate.academy.service.AuthenticationServiceImpl:14 login method was called!. Params: login=bob
+2023-03-04 10:23:35,786 INFO mate.academy.service.OrderServiceImpl:16 method completeOrder was called. Params: userId=2
+2023-03-04 10:23:35,788 INFO mate.academy.service.OrderServiceImpl:34 successful fetched data from DB. Params: userId=2
