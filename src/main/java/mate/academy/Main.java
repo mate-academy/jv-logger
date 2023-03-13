@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Problem with user authentication: " + e);
+            logger.error("Problem with user authentication: ", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
