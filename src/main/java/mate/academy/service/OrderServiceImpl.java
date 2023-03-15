@@ -31,7 +31,7 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = List.of(iphone, macBook, xiaomi);
         // TODO: add log message about successful fetched data from DB
         logger.debug("Data from getAllProductsFromShoppingCart method "
-                + "\nwas successfully fetched. Params: userId UserId={}. "
+                + "\nwas successfully fetched. Params: userId={}. "
                 + "\nData Base: products={}", userId, products);
         return products;
     }
