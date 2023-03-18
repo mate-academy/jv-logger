@@ -6,7 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
-    private static final Logger LOGGER = LogManager.getLogger(AuthenticationServiceImpl.class.getName());
+    private static final Logger LOGGER = LogManager
+            .getLogger(AuthenticationServiceImpl.class.getName());
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
@@ -21,7 +22,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private User findByLogin(String login) {
         User user = new User(login, "1234");
         user.setUserId(2L);
-        LOGGER.info("Method findByLogin was called. Params: User: {}, UserId: {}", user, user.getUserId());
+        LOGGER.info("Method findByLogin was called."
+                + " Params: User: {}, UserId: {}", user, user.getUserId());
         return user;
     }
 }

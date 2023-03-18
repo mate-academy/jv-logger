@@ -15,7 +15,8 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
-        LOGGER.info("Method completeOrder was called. Params: Order: {}, OrderId: {}", order, order.getOrderId());
+        LOGGER.info("Method completeOrder was called."
+                + " Params: Order: {}, OrderId: {}", order, order.getOrderId());
         return order;
     }
 
@@ -24,7 +25,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        LOGGER.info("Method getAllProductsFromShoppingCart was called. Params: Products: {}", products);
+        LOGGER.info("Method getAllProductsFromShoppingCart was called."
+                + " Params: Products: {}", products);
         return products;
     }
 }
