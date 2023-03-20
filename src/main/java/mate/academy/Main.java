@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Unable to authorize user");
+            logger.error("Unable to authorize user ", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
