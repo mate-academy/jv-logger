@@ -8,6 +8,7 @@ import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
 
 public class Main {
+
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
