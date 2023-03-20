@@ -1,0 +1,6 @@
+2023-03-20 16:00:31,574 DEBUG mate.academy.service.AuthenticationServiceImpl:13 login method had been invoked with login bob
+2023-03-20 16:00:31,579 DEBUG mate.academy.service.OrderServiceImpl:15 completeOrder method had been invoked with such userId 2
+2023-03-20 16:00:31,580 DEBUG mate.academy.service.OrderServiceImpl:27 all products were successfully added to List userId 2
+2023-03-20 16:00:50,993 DEBUG mate.academy.service.AuthenticationServiceImpl:13 login method had been invoked with login bob
+2023-03-20 16:00:50,998 DEBUG mate.academy.service.OrderServiceImpl:15 completeOrder method had been invoked with such userId 2
+2023-03-20 16:00:51,000 DEBUG mate.academy.service.OrderServiceImpl:27 all products were successfully added to List userId 2
