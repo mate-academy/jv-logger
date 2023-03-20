@@ -15,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
+
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
