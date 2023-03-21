@@ -13,15 +13,13 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        String login = "bob";
-        String password = "1234";
 
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login(login, password);
+            user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Invalid attempt to login by {};", login);
+            logger.error("Invalid attempt to login");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
