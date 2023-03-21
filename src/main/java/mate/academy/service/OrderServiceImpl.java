@@ -30,7 +30,7 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         // TODO: add log message about successful fetched data from DB
-        logger.debug("Fetched successful data from DB by user Id. User Id: {} <- ", userId);
+        logger.info("Fetched successful data from DB by user Id. User Id: {} <- ", userId);
         return products;
     }
 }
