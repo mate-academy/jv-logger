@@ -11,7 +11,7 @@
         </File>
     </Appenders>
     <Loggers>
-        <Looger name = "mate.academy" level = "info" additivity = "false">
+        <Looger name = "mate.academy" level = "debug" additivity = "false">
             <AppenderRef ref = "LogToConsole"/>
             <AppenderRef ref = "LogToFile"/>
         </Looger>
