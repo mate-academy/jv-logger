@@ -5,11 +5,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
-    private static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
 
     @Override
     public Order completeOrder(Long userId) {
@@ -30,11 +31,7 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info(
-                "Successfully retrieved list of products for user with id: {}. \n[{}]",
-                userId,
-                products.stream()
-                        .map(Product::getTitle)
-                        .collect(Collectors.joining(", ")));
+                "Successfully retrieved list of products for user with id: {}.", userId);
         return products;
     }
 }
