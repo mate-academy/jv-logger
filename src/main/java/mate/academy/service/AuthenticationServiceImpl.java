@@ -19,7 +19,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        logger.info("Method findByLogin was called. Parameters: login = {}", login);
+        logger.debug("Method findByLogin was called. Parameters: login = {}", login);
         User user = new User(login, "1234");
         // this user identifier should be set by DB. We will use dummy data for this example
         user.setUserId(2L);
