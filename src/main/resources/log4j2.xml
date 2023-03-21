@@ -17,7 +17,7 @@
             </Logger>
             <Root level="error">
                 <Appender ref="LogToFile"/>
-                <Appender ref="LogToFile"/>
+                <Appender ref="LogToConsole"/>
             </Root>
     </Loggers>
 </Configuration>
