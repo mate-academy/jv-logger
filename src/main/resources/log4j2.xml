@@ -11,10 +11,6 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="mate.academy" level="info" additivity="false">
-            <AppenderRef ref="LogToFile"/>
-            <AppenderRef ref="LogToConsole"/>
-        </Logger>
         <Logger name="mate.academy" level="debug" additivity="true">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
