@@ -12,7 +12,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("completeOrder method was called by user{}", userId);
+        logger.debug("completeOrder method was called by user{}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         logger.info("Successfully ordered products by user: userId{};", userId);
