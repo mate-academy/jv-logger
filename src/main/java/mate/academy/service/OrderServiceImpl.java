@@ -12,9 +12,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
+        logger.info("completeOrder method was called by user{}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
-        logger.debug("Successfully ordered products by user: userId{};", userId);
+        logger.info("Successfully ordered products by user: userId{};", userId);
         order.setOrderId(1L);
         return order;
     }
@@ -24,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.debug("Successfully fetched data from DB by user : usedId{};", userId);
+        logger.info("Successfully fetched data from DB by user : usedId{};", userId);
         return products;
     }
 }
