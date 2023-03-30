@@ -1,0 +1,7 @@
+
+2023-03-31 01:55:26,764 INFO mate.academy.service.AuthenticationServiceImpl:13 Login method was called. Parameter: login = bob
+2023-03-31 01:55:26,768 INFO mate.academy.service.OrderServiceImpl:15 completeOrder method was called. Parameter: userId = 2
+2023-03-31 01:55:26,770 INFO mate.academy.service.OrderServiceImpl:27 Data fetched from DB successful.
+Data: iphone - iPhone X, price - 1199;
+macBok - MacBook Air 2020, price - 1399;
+xiaomi - Xiaomi 12, price - 499
