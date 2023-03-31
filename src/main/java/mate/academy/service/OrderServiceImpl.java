@@ -24,14 +24,10 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Data fetched from DB successful."
-                        + System.lineSeparator() + "Data: iphone - {}, price - {};"
-                        + System.lineSeparator()
-                        + "macBok - {}, price - {};" + System.lineSeparator()
-                        + "xiaomi - {}, price - {}",
-                        iphone.getTitle(), iphone.getPrice(),
-                        macBook.getTitle(), macBook.getPrice(),
-                        xiaomi.getTitle(), xiaomi.getPrice());
+
+        logger.info("Data fetched from DB successful." + products.stream()
+                .map(e -> "device - " + e.getTitle() + ", price - " + e.getPrice())
+                .reduce("", (a, b) -> a + System.lineSeparator() + b));
         return products;
     }
 }
