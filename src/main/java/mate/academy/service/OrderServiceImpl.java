@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
     private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
         logger.info("CompleteOrder method was called. Params: userId = {}", userId);
@@ -27,8 +28,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Products from shopping cart was successful fetched. " +
-                "Params: usderId = {}, products = {}",userId, products);
+        logger.info("Products from shopping cart was successful fetched. "
+                + "Params: usderId = {}, products = {}", userId, products);
         return products;
     }
 }
