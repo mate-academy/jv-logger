@@ -1,0 +1,44 @@
+2023-05-08 17:28:04,231 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params : login = bob
+2023-05-08 17:28:04,234 INFO mate.academy.service.AuthenticationServiceImpl:23 findByLogin method was called. Params : login = bob
+2023-05-08 17:28:04,242 INFO mate.academy.service.AuthenticationServiceImpl:26 findByLogin method return. User = User{userId=2, login='bob'}
+2023-05-08 17:28:04,242 INFO mate.academy.service.AuthenticationServiceImpl:18 login method return. User = User{userId=2, login='bob'}
+2023-05-08 17:28:04,249 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called. Params : userId = 2
+2023-05-08 17:28:04,250 INFO mate.academy.service.AuthenticationServiceImpl:24 getAllProductsFromShoppingCart method was called. Params : userId = 2
+2023-05-08 17:28:04,260 INFO mate.academy.service.AuthenticationServiceImpl:29 getAllProductsFromShoppingCart method return. Params : List<Product> = [mate.academy.model.Product@c88a337, mate.academy.model.Product@5d0a1059, mate.academy.model.Product@485966cc]
+2023-05-08 17:28:04,267 INFO mate.academy.service.AuthenticationServiceImpl:19 completeOrder method return. Order = mate.academy.model.Order@54bff557
+2023-05-08 17:29:01,822 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params : login = bob
+2023-05-08 17:29:01,825 INFO mate.academy.service.AuthenticationServiceImpl:23 findByLogin method was called. Params : login = bob
+2023-05-08 17:29:01,826 INFO mate.academy.service.AuthenticationServiceImpl:26 findByLogin method return. User = User{userId=2, login='bob'}
+2023-05-08 17:29:01,826 INFO mate.academy.service.AuthenticationServiceImpl:18 login method return. User = User{userId=2, login='bob'}
+2023-05-08 17:29:01,834 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called. Params : userId = 2
+2023-05-08 17:29:01,834 INFO mate.academy.service.AuthenticationServiceImpl:24 getAllProductsFromShoppingCart method was called. Params : userId = 2
+2023-05-08 17:29:01,835 INFO mate.academy.service.AuthenticationServiceImpl:29 getAllProductsFromShoppingCart method return. Params : List<Product> = [mate.academy.model.Product@37d4349f, mate.academy.model.Product@434a63ab, mate.academy.model.Product@6e0f5f7f]
+2023-05-08 17:29:01,836 INFO mate.academy.service.AuthenticationServiceImpl:19 completeOrder method return. Order = mate.academy.model.Order@3ee37e5a
+2023-05-08 17:33:15,493 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params : login = bob
+2023-05-08 17:33:15,495 INFO mate.academy.service.AuthenticationServiceImpl:23 findByLogin method was called. Params : login = bob
+2023-05-08 17:33:15,496 INFO mate.academy.service.AuthenticationServiceImpl:26 findByLogin method return. User = User{userId=2, login='bob'}
+2023-05-08 17:33:15,497 INFO mate.academy.service.AuthenticationServiceImpl:18 login method return. User = User{userId=2, login='bob'}
+2023-05-08 17:33:15,498 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called. Params : userId = 2
+2023-05-08 17:33:15,499 INFO mate.academy.service.AuthenticationServiceImpl:24 getAllProductsFromShoppingCart method was called. Params : userId = 2
+2023-05-08 17:33:15,508 INFO mate.academy.service.AuthenticationServiceImpl:29 getAllProductsFromShoppingCart method return. Params : List<Product> = [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-05-08 17:33:15,509 INFO mate.academy.service.AuthenticationServiceImpl:19 completeOrder method return. Order = mate.academy.model.Order@6e0f5f7f
+2023-05-08 17:34:17,032 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params : login = bob
+2023-05-08 17:34:17,035 INFO mate.academy.service.AuthenticationServiceImpl:23 findByLogin method was called. Params : login = bob
+2023-05-08 17:34:17,036 INFO mate.academy.service.AuthenticationServiceImpl:26 findByLogin method return. User = User{userId=2, login='bob'}
+2023-05-08 17:34:17,037 ERROR mate.academy.Main:21 Username or password are incorrect
+2023-05-08 17:39:15,469 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params : login = bob
+2023-05-08 17:39:15,472 INFO mate.academy.service.AuthenticationServiceImpl:23 findByLogin method was called. Params : login = bob
+2023-05-08 17:39:15,473 INFO mate.academy.service.AuthenticationServiceImpl:26 findByLogin method return. User = User{userId=2, login='bob'}
+2023-05-08 17:39:15,474 INFO mate.academy.service.AuthenticationServiceImpl:18 login method return. User = User{userId=2, login='bob'}
+2023-05-08 17:39:15,475 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called. Params : userId = 2
+2023-05-08 17:39:15,475 INFO mate.academy.service.AuthenticationServiceImpl:24 getAllProductsFromShoppingCart method was called. Params : userId = 2
+2023-05-08 17:39:15,477 INFO mate.academy.service.AuthenticationServiceImpl:29 getAllProductsFromShoppingCart method return. Params : List<Product> = [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-05-08 17:39:15,478 INFO mate.academy.service.AuthenticationServiceImpl:19 completeOrder method return. Order = mate.academy.model.Order@6e0f5f7f
+2023-05-08 17:42:15,451 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params : login = bob
+2023-05-08 17:42:15,454 INFO mate.academy.service.AuthenticationServiceImpl:23 findByLogin method was called. Params : login = bob
+2023-05-08 17:42:15,455 INFO mate.academy.service.AuthenticationServiceImpl:26 findByLogin method return. User = User{userId=2, login='bob'}
+2023-05-08 17:42:15,456 INFO mate.academy.service.AuthenticationServiceImpl:18 login method return. User = User{userId=2, login='bob'}
+2023-05-08 17:42:15,456 INFO mate.academy.service.AuthenticationServiceImpl:15 completeOrder method was called. Params : userId = 2
+2023-05-08 17:42:15,457 INFO mate.academy.service.AuthenticationServiceImpl:24 getAllProductsFromShoppingCart method was called. Params : userId = 2
+2023-05-08 17:42:15,458 INFO mate.academy.service.AuthenticationServiceImpl:29 getAllProductsFromShoppingCart method return. Params : List<Product> = [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-05-08 17:42:15,459 INFO mate.academy.service.AuthenticationServiceImpl:19 completeOrder method return. Order = mate.academy.model.Order@6e0f5f7f
