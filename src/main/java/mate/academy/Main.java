@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("I can't login with this login and password");
+            logger.error("Failed to log in with the provided credentials");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
