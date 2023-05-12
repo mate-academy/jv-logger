@@ -2,8 +2,6 @@ package mate.academy.service;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import mate.academy.Main;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
@@ -32,8 +30,8 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         // TODO: add log message about successful fetched data from DB
-        logger.info("Data about order successful " +
-                "fetched from DB for user with ID {}", userId);
+        logger.info("Data about order successful "
+                + "fetched from DB for user with ID {}", userId);
         return products;
     }
 }

@@ -23,7 +23,7 @@ public class Main {
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-        logger.info("A new order has been successfully created " +
-                "for the user with ID {}", user.getUserId());
+        logger.info("A new order has been successfully created "
+                + "for the user with ID {}", user.getUserId());
     }
 }
