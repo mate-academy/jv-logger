@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="info">
     <Appenders>
-        <File name="LogToFIle" fileName="logs/appLog">
+        <File name="log4j2" fileName="logs/appLog">
             <PatternLayout>
                 <Pattern>%d %p %c:%L %m%n</Pattern>
             </PatternLayout>
@@ -9,10 +9,10 @@
     </Appenders>
     <Loggers>
         <Logger name="mate.academy" level="info" additivity="false">
-            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="log4j2"/>
         </Logger>
         <Root level="error">
-            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="log4j2"/>
         </Root>
     </Loggers>
 </Configuration>
