@@ -14,11 +14,11 @@ public class Main {
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
+        User user = null;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Can't create login");
+            logger.error("Login is incorrect");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
