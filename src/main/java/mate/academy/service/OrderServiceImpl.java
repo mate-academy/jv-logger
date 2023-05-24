@@ -13,10 +13,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        // TODO: add log message about method completeOrder was called
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
-        logger.info("Method completeOrder was called. UserId: ", userId);
+        logger.info("Method completeOrder was called. UserId: {}. Products: {}", userId, products);
         order.setOrderId(1L);
         return order;
     }
@@ -26,7 +25,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Data from the database was successfully fetched. UserId: ", userId);
+        logger.info("Data from the database was successfully fetched. UserId: {}. Products: {}",
+                userId, products);
         return products;
     }
 }
