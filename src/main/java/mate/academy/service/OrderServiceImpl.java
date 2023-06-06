@@ -3,7 +3,6 @@ package mate.academy.service;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import mate.academy.model.Order;
 import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
@@ -11,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
     private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
         logger.debug("Method completeOrder was called to User with id={}", userId);
@@ -26,7 +26,8 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("Successful fetched data - {} from DB: ",
-                products.stream().map(p -> p.getTitle() + " " + p.getPrice()).collect(Collectors.toList()));
+                products.stream().map(p -> p.getTitle() + " " + p.getPrice())
+                        .collect(Collectors.toList()));
         return products;
     }
 }
