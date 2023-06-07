@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login(user.getLogin(), user.getPassword());
         } catch (AuthenticationException e) {
-            logger.error("Authentication failed, Can't login User" + user.getLogin(), e);
+            logger.error("Authentication failed, cannot login User " + user.getLogin(), e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
