@@ -17,9 +17,9 @@ public class Main {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login("bob", "12345");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error("Username or password are incorrect", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
