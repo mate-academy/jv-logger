@@ -18,11 +18,10 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Login is incorrect", e);
+            logger.error("Failed to login. Reason: " + e.getMessage(), e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
     }
 }
-
