@@ -7,9 +7,9 @@ import mate.academy.model.Product;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 public class OrderServiceImpl implements OrderService {
     private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
         logger.info("Complete order method was called. User ID: {}", userId);
@@ -29,7 +29,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Successfully fetched {} products from shopping cart for user: {}", products.size(), userId);
+        logger.info("Successfully fetched {} products from shopping"
+                + " cart for user: {}", products.size(), userId);
         return products;
     }
 }
