@@ -16,7 +16,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
             logger.error("Authentication failed for login: {}", login);
             throw new AuthenticationException("Username or password are incorrect");
         }
-        user.logUserLogin();
+        logger.info("User logged in - User ID: {}, Login: {}", user.getUserId(), user.getLogin());
         return user;
     }
 

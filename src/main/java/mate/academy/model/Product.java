@@ -1,11 +1,8 @@
 package mate.academy.model;
 
 import java.math.BigDecimal;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Product {
-    private static final Logger logger = LogManager.getLogger(Product.class);
     private String title;
     private BigDecimal price;
 
@@ -31,9 +28,5 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
-    }
-
-    public void logProductInfo() {
-        logger.debug("Product - Title: {}, Price: {}", title, price);
     }
 }
