@@ -10,7 +10,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Login was invoked with '{}' name", login);
+        logger.debug("Login was invoked with '{}' name", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             logger.error("Login and password don't match.\n Login: {}", login);
@@ -22,7 +22,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private User findByLogin(String login) {
         User user = new User(login, "1234");
         user.setUserId(2L);
-        logger.info("User {} was found", login);
+        logger.debug("User {} was found", login);
         return user;
     }
 }
