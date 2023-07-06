@@ -1,5 +1,4 @@
 .idea/*
-.logs/*
+logs/*
 *.iml
 target/*
-/logs/app.log
