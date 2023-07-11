@@ -1,3 +1,4 @@
 .idea/*
 *.iml
 target/*
+/logs/orderApp-20230711.log
