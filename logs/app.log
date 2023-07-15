@@ -1,0 +1,25 @@
+2023-07-15 18:03:04,127 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called
+2023-07-15 18:10:10,960 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called
+2023-07-15 18:28:31,975 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called
+2023-07-15 18:34:06,207 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2023-07-15 18:41:49,266 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2023-07-15 18:42:40,220 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2023-07-15 18:42:40,224 ERROR mate.academy.Main:19 Can't login 
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:17) [classes/:?]
+2023-07-15 18:43:34,875 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2023-07-15 18:43:34,879 ERROR mate.academy.Main:19 Can't login
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:17) [classes/:?]
+2023-07-15 19:03:24,449 INFO mate.academy.service.AuthenticationServiceImpl:12 login method was called. Params: login = bob
+2023-07-15 19:03:24,454 ERROR mate.academy.Main:19 Can't login
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:15) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:17) [classes/:?]
+2023-07-15 19:16:38,008 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2023-07-15 19:16:38,013 ERROR mate.academy.Main:21 Can't login
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
