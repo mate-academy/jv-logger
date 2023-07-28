@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+
     @Override
     public User login(String login, String password) throws AuthenticationException {
         logger.info("Method login was called with param: login = {}", login);
