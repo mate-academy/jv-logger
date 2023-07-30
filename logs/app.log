@@ -1,0 +1,17 @@
+2023-07-30 20:36:32,932 INFO mate.academy.service.AuthenticationServiceImpl Login method was called. Params: login bob
+2023-07-30 20:37:28,429 INFO mate.academy.service.AuthenticationServiceImpl Login method was called. Params: login bob
+2023-07-30 20:42:09,356 INFO mate.academy.service.AuthenticationServiceImpl:14 Login method was called. Params: login bob
+2023-07-30 20:49:39,466 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login bob
+2023-07-30 20:49:39,476 INFO mate.academy.service.AuthenticationServiceImpl:16 Method completeOrder was called. Params: userId 2
+2023-07-30 20:49:39,480 INFO mate.academy.service.AuthenticationServiceImpl:33 Method getAllProductsFromShoppingCart successful fetched data from DB. Params: userId 2
+2023-07-30 20:51:02,851 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login null
+2023-07-30 20:51:02,861 INFO mate.academy.service.AuthenticationServiceImpl:16 Method completeOrder was called. Params: userId 2
+2023-07-30 20:51:02,864 INFO mate.academy.service.AuthenticationServiceImpl:33 Method getAllProductsFromShoppingCart successful fetched data from DB. Params: userId 2
+2023-07-30 20:51:43,411 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login bob
+2023-07-30 20:51:43,420 ERROR mate.academy.Main:21 Can't login user: bob
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:17) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2023-07-30 21:20:58,373 INFO mate.academy.service.AuthenticationServiceImpl:15 Method login was called. Params: login bob
+2023-07-30 21:20:58,383 INFO mate.academy.service.AuthenticationServiceImpl:20 Method completeOrder was called. Params: userId 2
+2023-07-30 21:20:58,386 INFO mate.academy.service.AuthenticationServiceImpl:36 Method getAllProductsFromShoppingCart successful fetched data from DB. Params: userId 2
