@@ -10,7 +10,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        LOGGER.info("'login' method was invoked "
+        LOGGER.debug("'login' method was invoked "
                 + "with next arguments: user login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {

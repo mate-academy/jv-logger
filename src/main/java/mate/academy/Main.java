@@ -17,11 +17,16 @@ public class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
+            LOGGER.info("'login' method was invoked "
+                    + "with next arguments: user login = {}", user.getLogin());
         } catch (AuthenticationException e) {
-            LOGGER.error("User authentication failed. Incorrect user login or password");
+            LOGGER.error("User authentication failed."
+                    + " Incorrect user login or password ", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
+        LOGGER.info("'completeOrder' method was invoked "
+                + "with next arguments: userId = {}", user.getUserId());
     }
 }
