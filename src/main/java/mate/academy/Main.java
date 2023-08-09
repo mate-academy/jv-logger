@@ -18,8 +18,8 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
+            e.
             logger.error("Can't login user with login: " + user.getLogin(), e);
-            e.printStackTrace();
             return;
         }
         OrderService orderService = new OrderServiceImpl();
