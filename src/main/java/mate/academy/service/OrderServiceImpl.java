@@ -8,11 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
-    public static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+    public static final Logger LOGGER = LogManager.getLogger(AuthenticationServiceImpl.class);
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("CompleteOrder method was called. User id: {}", userId);
+        LOGGER.debug("CompleteOrder method was called. User id: {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
@@ -24,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Data from DB successfuly fetched, userId: {}", userId);
+        LOGGER.info("Data from DB successfuly fetched, userId: {}", userId);
         return products;
     }
 }
