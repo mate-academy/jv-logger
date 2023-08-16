@@ -14,8 +14,11 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
-            return;
+            try {
+                throw new AuthenticationException("Can't login user");
+            } catch (AuthenticationException ex) {
+                throw new RuntimeException("Can't login user", ex);
+            }
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
