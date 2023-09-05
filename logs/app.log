@@ -1,0 +1,5 @@
+2023-09-05 23:43:38,210 INFO mate.academy.service.AuthenticationServiceImpl Method login was called.
+2023-09-05 23:43:38,211 ERROR mate.academy.Main Can't login. 
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:15) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:18) [classes/:?]
