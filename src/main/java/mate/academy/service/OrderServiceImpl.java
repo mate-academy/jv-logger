@@ -8,12 +8,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
-    private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
+    private static final Logger LOGGER = LogManager.getLogger(OrderServiceImpl.class);
 
     @Override
     public Order completeOrder(Long userId) {
         // DONE: add log message about method completeOrder was called
-        logger.info("completeOrder method was called with params: userId={}", userId);
+        LOGGER.info("completeOrder method was called with params: userId={}", userId);
 
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
@@ -32,9 +32,9 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = List.of(iphone, macBook, xiaomi);
 
         // DONE: add log message about successful fetched data from DB
-        logger.info("successfully fetched product data from DB for userId={}", userId);
+        LOGGER.info("successfully fetched product data from DB for userId={}", userId);
         for (Product product : products) {
-            logger.info("Product name='{}'    price={}", product.getTitle(), product.getPrice());
+            LOGGER.info("Product name='{}'    price={}", product.getTitle(), product.getPrice());
         }
 
         return products;
