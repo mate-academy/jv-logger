@@ -10,16 +10,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
     public static void main(String[] args) {
-        System.setProperty("log4j.configurationFile", "classpath:log4j2.xml");
-        Logger loger = LogManager.getLogger(Main.class);
-        loger.info("jlfnlfn");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error("Can't login", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
