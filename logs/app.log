@@ -1,6 +1,0 @@
-2023-09-20 20:42:54,338 INFO mate.academy.service.AuthenticationServiceImpl login method was called
-2023-09-20 22:29:39,200 INFO mate.academy.service.AuthenticationServiceImpl14 login method was called. Login: bob
-2023-09-20 22:29:39,205 INFO mate.academy.service.OrderServiceImpl16 completeOrder was called. userId: 2
-2023-09-20 22:32:05,646 INFO mate.academy.service.AuthenticationServiceImpl14 login method was called. Login: bob
-2023-09-20 22:32:05,653 INFO mate.academy.service.OrderServiceImpl16 completeOrder was called. userId: 2
-2023-09-20 22:32:05,656 INFO mate.academy.service.OrderServiceImpl32 Successful fetched data from DB
