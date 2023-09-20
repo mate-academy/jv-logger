@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.trace(e);
+            logger.trace("User, couldn't authenticate", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
