@@ -4,3 +4,6 @@
 2023-09-21 17:32:08,555 INFO mate.academy.service.AuthenticationServiceImpl:12 Login method was called with params login: bob
 2023-09-21 17:32:08,557 INFO mate.academy.service.OrderServiceImpl:15 completeOrder method was called with params userId: 2
 2023-09-21 17:32:08,558 INFO mate.academy.service.OrderServiceImpl:27 successful fetched data from DB for userId: 2
+2023-09-22 15:08:05,427 INFO mate.academy.service.AuthenticationServiceImpl:14 Login method was called with params login: bob
+2023-09-22 15:08:05,429 INFO mate.academy.service.OrderServiceImpl:15 completeOrder method was called with params userId: 2
+2023-09-22 15:08:05,430 INFO mate.academy.service.OrderServiceImpl:27 successful fetched data from DB for userId: 2
