@@ -1,0 +1,9 @@
+2023-04-09 18:20:44,179 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login = bob
+2023-04-09 18:20:44,184 INFO mate.academy.service.OrderServiceImpl:17 Method completeOrder was called. Param: userId = 2
+2023-04-09 18:20:44,185 INFO mate.academy.service.OrderServiceImpl:29 Successful fetched data from DB. Params: userId = 2, products = [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-04-09 18:31:22,147 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login = bob
+2023-04-09 18:31:22,151 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Param: userId = 2
+2023-04-09 18:31:22,158 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB. Params: userId = 2, products = [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-04-09 18:43:23,218 DEBUG mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login = bob
+2023-04-09 18:43:23,222 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Param: userId = 2
+2023-04-09 18:43:23,224 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB. Params: userId = 2, products = [Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
