@@ -1,4 +1,4 @@
-my_log_file.log
+logs/
 .idea/*
 *.iml
 target/*
