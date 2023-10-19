@@ -1,5 +1,8 @@
 package mate.academy.model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class User {
     private Long userId;
     private String login;
@@ -32,5 +35,11 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "userId=" + userId + ", login='" + login + '\'' + ", password='"
+                + password + '\'' + '}';
     }
 }
