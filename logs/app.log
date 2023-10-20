@@ -1,0 +1,2 @@
+2023-10-20 11:24:09,115 INFO mate.academy.service.OrderServiceImpl:15 CompleteOrder method was called
+2023-10-20 11:24:09,119 INFO mate.academy.service.OrderServiceImpl:27 GetAllProductsFromShoppingCartData method was called. Data from DB were successful fetched
