@@ -24,7 +24,8 @@ public class OrderServiceImpl implements OrderService {
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
         // NOTE: In production ready code this method should fetch data from DB
         // For test purpose we simplify this method and return dummy data
-        logger.info("getAllProductsFromShoppingCart method was called with params: userId = {}", userId);
+        logger.info("getAllProductsFromShoppingCart method was called"
+                 + " with params: userId = {}", userId);
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
