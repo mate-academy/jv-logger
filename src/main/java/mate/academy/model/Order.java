@@ -1,41 +1,90 @@
+/**
+ * Provides model classes for the application.
+ */
 package mate.academy.model;
 
 import java.util.List;
 
-public class Order {
+public final class Order {
+    /**
+     * The ID of the order.
+     */
     private Long orderId;
+
+    /**
+     * The list of products in the order.
+     */
     private List<Product> products;
-    private Long userId; // the identifier of user who complete the order
 
-    public Order() {
+    /**
+     * The ID of the user who placed the order.
+     */
+    private Long userId;
+
+    /**
+     * Constructs a new Order with the specified
+     * list of products and user ID.
+     *
+     * @param productsParam the list of products in the order
+     * @param userIdParam   the ID of the user who placed the order
+     */
+    public Order(final List<Product> productsParam,
+                 final Long userIdParam) {
+        this.products = productsParam;
+        this.userId = userIdParam;
     }
 
-    public Order(List<Product> products, Long userId) {
-        this.products = products;
-        this.userId = userId;
-    }
-
+    /**
+     * Returns the ID of the order.
+     *
+     * @return the ID of the order
+     */
     public Long getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
+    /**
+     * Sets the ID of the order.
+     *
+     * @param orderIdParam the ID of the order
+     */
+    public void setOrderId(final Long orderIdParam) {
+        this.orderId = orderIdParam;
     }
 
+    /**
+     * Returns the list of products in the order.
+     *
+     * @return the list of products
+     */
     public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    /**
+     * Sets the list of products in the order.
+     *
+     * @param productsParam the list of products
+     */
+    public void setProducts(final List<Product> productsParam) {
+        this.products = productsParam;
     }
 
+    /**
+     * Returns the ID of the user who placed the order.
+     *
+     * @return the ID of the user
+     */
     public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    /**
+     * Sets the ID of the user who placed the order.
+     *
+     * @param userIdParam the ID of the user
+     */
+    public void setUserId(final Long userIdParam) {
+        this.userId = userIdParam;
     }
 }
