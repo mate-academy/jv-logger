@@ -8,15 +8,16 @@ import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
-
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public final class Main {
     /**
      * The logger for the Main class.
      */
-    private static Logger logger = Logger.getLogger(
-            Main.class.getName());
+    private static Logger logger = LoggerFactory.getLogger(
+            Main.class);
+
 
     private Main() {
         // private constructor to prevent instantiation
@@ -33,8 +34,8 @@ public final class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
-        } catch (Exception  e) {
-            logger.severe("An authentication exception occurred: ");
+        } catch (Exception e) {
+            logger.error("An authentication exception occurred: ", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
