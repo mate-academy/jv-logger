@@ -3,7 +3,6 @@
  */
 package mate.academy;
 
-import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
 import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
@@ -16,7 +15,7 @@ public final class Main {
     /**
      * The logger for the Main class.
      */
-    private static final Logger LOGGER = Logger.getLogger(
+    private static Logger logger = Logger.getLogger(
             Main.class.getName());
 
     private Main() {
@@ -34,9 +33,8 @@ public final class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
-        } catch (AuthenticationException e) {
-            LOGGER.severe("An authentication exception occurred: "
-                    + e.getMessage());
+        } catch (Exception  e) {
+            logger.severe("An authentication exception occurred: ");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
