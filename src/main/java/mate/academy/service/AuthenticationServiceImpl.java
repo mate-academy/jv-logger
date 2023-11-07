@@ -7,9 +7,9 @@ import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
     private static final String METHOD_LOGIN_CALL_MESSAGE = "Method "
-            + "login was called. Params: login={}";
+            + "login was called with params: login={}";
     private static final String AUTHENTICATION_FAILURE_MESSAGE = "Username "
-            + "or password are incorrect";
+            + "or password is incorrect!";
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
 
     @Override
