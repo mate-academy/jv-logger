@@ -23,7 +23,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
-        logger.info("Method userId was called. getAllProductsFromShoppingCart: userId = {}", userId);
+        logger.info("Method userId was called. getAllProductsFromShoppingCart: userId = {}",
+                userId);
         // NOTE: In production ready code this method should fetch data from DB
         // For test purpose we simplify this method and return dummy data
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
