@@ -1,3 +1,4 @@
+
 package mate.academy.service;
 
 import mate.academy.exception.AuthenticationException;
