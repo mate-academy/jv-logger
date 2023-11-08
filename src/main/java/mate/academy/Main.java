@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
+
     private static final String LOGGER_ERROR_MESSAGE = "User can`t login ";
     private static final Logger logger = LogManager.getLogger(Main.class);
 
