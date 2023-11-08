@@ -1,0 +1,2 @@
+2023-11-08 18:58:46,560 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2023-11-08 18:58:46,567 INFO mate.academy.service.OrderServiceImpl:15 UserId was called. Params: userId = 2
