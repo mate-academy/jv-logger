@@ -8,10 +8,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
-    private static final String COMPLETE_ORDER_INFO = "completeOrder method was called."
-            + "Params: userId - {}";
-    private static final String SUCCESSFUL_FETCH_MESSAGE = "Successful fetched data from DB"
-            + "Params: userId - {}";
+    private static final String COMPLETE_ORDER_INFO = "CompleteOrder method was called."
+            + " Params: userId - {}";
+    private static final String SUCCESSFUL_FETCH_MESSAGE = "Successfully fetched data from DB."
+            + " Params: userId - {}";
     private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
 
     @Override
