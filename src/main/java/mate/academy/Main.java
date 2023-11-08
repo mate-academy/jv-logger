@@ -1,4 +1,3 @@
-
 package mate.academy;
 
 import mate.academy.exception.AuthenticationException;
