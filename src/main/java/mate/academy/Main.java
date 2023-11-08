@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
-    private static final String LOGIN_ERROR = "Cannot login";
+    private static final String LOGIN_ERROR = "Cannot login, error - {}";
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
@@ -19,7 +19,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error(LOGIN_ERROR + e);
+            logger.error(LOGIN_ERROR, e.getMessage());
             return;
         }
         OrderService orderService = new OrderServiceImpl();
