@@ -7,10 +7,12 @@ import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+    private static final String LOGIN_METHOD_CALLED = "Login method was called."
+            + " Params: login - {}";
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Login method was called. Params: login - {}", login);
+        logger.info(LOGIN_METHOD_CALLED, login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
