@@ -13,6 +13,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     private static final String LOGIN_FAILURE_MSG
             = "Login error. Please check your login or password.";
+
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;

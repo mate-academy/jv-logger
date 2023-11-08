@@ -12,6 +12,7 @@ public class OrderServiceImpl implements OrderService {
     private static final String METHOD_CALL_MSG
             = "completeOrder method was called. Params: userId={}";
     private static final String FETCH_DATA_SUCCESS_MSG = "Fetch data from DB = success!!!";
+
     @Override
     public Order completeOrder(Long userId) {
         logger.info(METHOD_CALL_MSG, + userId);
