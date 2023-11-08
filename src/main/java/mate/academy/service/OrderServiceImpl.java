@@ -12,7 +12,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("Method userId was called. Params: userId = {}", userId);
+        logger.info("Method userId was called. completeOrder: userId = {}", userId);
         // TODO: add log message about method completeOrder was called
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
@@ -23,7 +23,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
-        logger.info("Method userId was called. Params: userId = {}", userId);
+        logger.info("Method userId was called. getAllProductsFromShoppingCart: userId = {}", userId);
         // NOTE: In production ready code this method should fetch data from DB
         // For test purpose we simplify this method and return dummy data
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
