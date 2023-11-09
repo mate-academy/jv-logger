@@ -10,7 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    private static final String LOGGER_ERROR_MESSAGE = "User can`t login ";
+    private static final String LOGGER_ERROR_MESSAGE = "User can`t login - {}";
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException login) {
-            logger.debug("Method login was called. Params: login={}", login);
+            logger.error(LOGGER_ERROR_MESSAGE, login);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
