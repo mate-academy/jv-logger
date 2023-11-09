@@ -18,8 +18,8 @@ public class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
-        } catch (AuthenticationException e) {
-            logger.error(LOGGER_ERROR_MESSAGE + e);
+        } catch (AuthenticationException login) {
+            logger.debug("Method login was called. Params: login={}", login);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
