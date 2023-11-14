@@ -16,7 +16,6 @@
             https://raw.githubusercontent.com/mate-academy/style-guides/master/java/checkstyle.xml
         </maven.checkstyle.plugin.configLocation>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -29,7 +28,6 @@
             <artifactId>log4j-core</artifactId>
             <version>2.21.1</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
