@@ -13,7 +13,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         logger.info("Attempting to log in. Params: login={}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
-            logger.warn("Login failed for user: {}. Incorrect password", login);
+            logger.error("Login failed for user: login={}.", login);
             throw new AuthenticationException("Username or password are incorrect");
         }
         logger.info("Login successful for user: {}", login);
@@ -21,8 +21,10 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
+        logger.info("Finding user by login: {}", login);
         User user = new User(login, "1234");
         user.setUserId(2L);
+        logger.info("User found: {}. UserId: {}", login, user.getUserId());
         return user;
     }
 }

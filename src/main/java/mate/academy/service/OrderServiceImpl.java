@@ -22,11 +22,14 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
+        logger.info("Fetching products from shopping cart for userId: {}", userId);
+
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.debug("Successfully fetched products from DB. Params: userId={}", userId);
+
+        logger.info("Successfully fetched products for userId: {}", userId);
         return products;
     }
 }
