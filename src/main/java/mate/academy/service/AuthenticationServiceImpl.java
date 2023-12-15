@@ -11,7 +11,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        //TODO: add corresponding log message about method login was called
         logger.info("login was called. Params: login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
@@ -24,7 +23,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private User findByLogin(String login) {
         logger.info("findByLogin was called. Params: login = {}", login);
         User user = new User(login, "1234");
-        // this user identifier should be set by DB. We will use dummy data for this example
         logger.info("new user was created. Params: login = {}", login);
         user.setUserId(2L);
         logger.info("user id was attributed");
