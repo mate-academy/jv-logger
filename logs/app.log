@@ -1,0 +1,27 @@
+2024-01-04 22:01:45,905 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Login: bob
+2024-01-04 22:01:45,910 INFO mate.academy.service.AuthenticationServiceImpl:20 Log in success. User: mate.academy.model.User@78123e82
+2024-01-04 22:01:45,914 INFO mate.academy.service.AuthenticationServiceImpl:16 Method completeOrder was called. UserId: 2
+2024-01-04 22:01:45,915 INFO mate.academy.service.AuthenticationServiceImpl:33 Data fetched from DB successfully. UserId: 2
+2024-01-04 22:02:31,308 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Login: bob
+2024-01-04 22:02:31,313 ERROR mate.academy.service.AuthenticationServiceImpl:22 Can't log in
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:16) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2024-01-04 22:06:39,771 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Login: bob
+2024-01-04 22:06:39,778 INFO mate.academy.service.AuthenticationServiceImpl:20 Log in success. User: mate.academy.model.User@53fdffa1
+2024-01-04 22:06:39,782 INFO mate.academy.service.AuthenticationServiceImpl:15 Method completeOrder was called. UserId: 2
+2024-01-04 22:06:39,785 INFO mate.academy.service.AuthenticationServiceImpl:31 Data fetched from DB successfully. UserId: 2
+2024-01-04 22:08:39,201 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Login: bob
+2024-01-04 22:08:39,206 INFO mate.academy.service.AuthenticationServiceImpl:15 Method completeOrder was called. UserId: 2
+2024-01-04 22:08:39,207 INFO mate.academy.service.AuthenticationServiceImpl:31 Data fetched from DB successfully. UserId: 2
+2024-01-04 22:08:57,254 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Login: bob
+2024-01-04 22:08:57,258 INFO mate.academy.service.AuthenticationServiceImpl:20 Log in success. User: mate.academy.model.User@53fdffa1
+2024-01-04 22:08:57,259 INFO mate.academy.service.AuthenticationServiceImpl:15 Method completeOrder was called. UserId: 2
+2024-01-04 22:08:57,261 INFO mate.academy.service.AuthenticationServiceImpl:31 Data fetched from DB successfully. UserId: 2
+2024-01-04 22:09:45,616 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Login: bob
+2024-01-04 22:09:45,623 INFO mate.academy.service.AuthenticationServiceImpl:20 Log in success.
+2024-01-04 22:09:45,625 INFO mate.academy.service.AuthenticationServiceImpl:15 Method completeOrder was called. UserId: 2
+2024-01-04 22:09:45,627 INFO mate.academy.service.AuthenticationServiceImpl:31 Data fetched from DB successfully. UserId: 2
+2024-01-04 22:10:12,090 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Login: bob
+2024-01-04 22:10:12,096 INFO mate.academy.service.AuthenticationServiceImpl:15 Method completeOrder was called. UserId: 2
+2024-01-04 22:10:12,097 INFO mate.academy.service.AuthenticationServiceImpl:31 Data fetched from DB successfully. UserId: 2
