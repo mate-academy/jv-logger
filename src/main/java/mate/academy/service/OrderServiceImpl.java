@@ -2,7 +2,6 @@ package mate.academy.service;
 
 import java.math.BigDecimal;
 import java.util.List;
-
 import mate.academy.Main;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
@@ -30,7 +29,8 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.debug("Successfully retrieved data from the database for userId {}. Products: {}", userId, products);
+        logger.debug("Successfully retrieved data from the database."
+                + " UserId {}. Products: {}", userId, products);
         return products;
     }
 }
