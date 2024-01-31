@@ -1,8 +1,8 @@
 package mate.academy.model;
 
+import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.util.List;
 
 public class Order {
     private static final Logger logger = LogManager.getLogger(Order.class);
