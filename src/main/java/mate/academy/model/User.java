@@ -1,8 +1,5 @@
 package mate.academy.model;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 public class User {
     private Long userId;
     private String login;
