@@ -6,15 +6,17 @@ import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
+import org.apache.log4j.Logger;
 
 public class Main {
+    public static Logger logger = Logger.getLogger(Main.class);
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error("Cant login user",e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
