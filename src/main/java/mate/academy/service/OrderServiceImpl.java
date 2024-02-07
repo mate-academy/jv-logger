@@ -4,10 +4,11 @@ import java.math.BigDecimal;
 import java.util.List;
 import mate.academy.model.Order;
 import mate.academy.model.Product;
-
-import static mate.academy.Main.logger;
+import org.apache.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
+    private static final Logger logger = Logger.getLogger(OrderServiceImpl.class);
+
     @Override
     public Order completeOrder(Long userId) {
         logger.debug("Method 'completeOrder' was called. Params: userId = " + userId);
