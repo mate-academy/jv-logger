@@ -1,7 +1,0 @@
-2024-02-14 20:08:08,226 INFO mate.academy.service.AuthenticationServiceImpl:13 Method `login` was called. Params: login = bob
-2024-02-14 20:08:08,229 INFO mate.academy.service.OrderServiceImpl:15 Method `completeOrder` was called. Params: userId = 2
-2024-02-14 20:08:08,230 INFO mate.academy.service.OrderServiceImpl:32 Data from DB successful fetched
-2024-02-14 20:12:23,258 INFO mate.academy.service.AuthenticationServiceImpl:13 Method `login` was called. Params: login = bob
-2024-02-14 20:12:23,260 INFO mate.academy.service.AuthenticationServiceImpl:25 Method `findByLogin` was called user with login = bob was find in DB
-2024-02-14 20:12:23,261 INFO mate.academy.service.OrderServiceImpl:15 Method `completeOrder` was called. Params: userId = 2
-2024-02-14 20:12:23,263 INFO mate.academy.service.OrderServiceImpl:32 Data from DB successful fetched
