@@ -1,0 +1,6 @@
+2023-06-29 13:23:46,924 INFO mate.academy.service.AuthenticationServiceImpl:13 Username and password authentication started for login=bob
+2023-06-29 13:23:46,926 ERROR mate.academy.service.AuthenticationServiceImpl:14 Username and password authentication error. Params: login=bob
+2023-06-29 13:23:46,926 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called for userId=2
+2023-06-29 13:23:46,927 ERROR mate.academy.service.OrderServiceImpl:15 Method completeOrder error for userId=2
+2023-06-29 13:23:46,927 INFO mate.academy.service.OrderServiceImpl:27 Data from DB was fetched successfully
+2023-06-29 13:23:46,928 ERROR mate.academy.service.OrderServiceImpl:28 Data from DB was fetched with error
