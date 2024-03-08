@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Appenders>
+    <File name="logToFile" filename="logs/app.log">
+        <PatternLayout>
+            <Pattern>%d %p %c:%l %m%n</Pattern>
+        </PatternLayout>
+    </File>
+</Appenders>
+<Loggers>
+    <Logger name="mate.academy" level="info" additivity="false">
+        <AppenderRef ref="logToFile"/>
+    </Logger>
+    <Root level="error">
+        <AppenderRef ref="logToFile"/>
+    </Root>
+</Loggers>
+</Configuration>
