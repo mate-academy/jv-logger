@@ -1,0 +1,2 @@
+2024-03-11 17:17:52,015 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. Params: UserId=2
+2024-03-11 17:17:52,017 INFO mate.academy.service.OrderServiceImpl:30 Data fetched from DB successful. Params: UserId=2
