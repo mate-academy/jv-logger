@@ -18,8 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Authentication failed: "
-                    + "Invalid username or password.", e);
+            logger.error("Authentication failed.", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
