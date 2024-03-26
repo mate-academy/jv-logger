@@ -29,7 +29,7 @@ public class OrderServiceImpl implements OrderService {
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         logger.info("getAllProductsFromShoppingCart method successful fetched data from DB by "
-                + "userId : {}" , userId);
+                + "userId : {}", userId);
         return products;
     }
 }
