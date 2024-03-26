@@ -1,11 +1,16 @@
 package mate.academy.service;
 
+import mate.academy.Main;
 import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
+    private static final Logger logger = LogManager.getLogger(Main.class);
     @Override
     public User login(String login, String password) throws AuthenticationException {
+        logger.info("Login method was called");
         //TODO: add corresponding log message about method login was called
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
