@@ -10,12 +10,12 @@ import mate.academy.service.OrderServiceImpl;
 public class Main {
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
+        User user = new User("bill", "qwerty");
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
-            return;
+            throw new RuntimeException("The user: " + user.getLogin()
+                    + "haven't been authenticated", e);
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());

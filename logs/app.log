@@ -1,0 +1,7 @@
+2024-03-26 18:49:18,146 INFO mate.academy.service.AuthenticationServiceImpl login method was called
+2024-03-26 19:50:57,094 INFO mate.academy.service.AuthenticationServiceImpl Method login was called. Params: login=bob
+2024-03-26 19:50:57,102 INFO mate.academy.service.AuthenticationServiceImpl Method completeOrder was called. Params: userId=2
+2024-03-26 19:50:57,104 INFO mate.academy.service.AuthenticationServiceImpl Successfully fetched data from the database for user with ID: 2
+2024-03-26 19:51:22,828 INFO mate.academy.service.AuthenticationServiceImpl Method login was called. Params: login=bob
+2024-03-26 19:51:22,831 INFO mate.academy.service.AuthenticationServiceImpl Method completeOrder was called. Params: userId=2
+2024-03-26 19:51:22,834 INFO mate.academy.service.AuthenticationServiceImpl Successfully fetched data from the database for user with ID: 2
