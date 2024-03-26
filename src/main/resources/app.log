@@ -1,0 +1,106 @@
+2024-03-26 11:51:59,212 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:51:59,217 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login:bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:20,257 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:20,262 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:20,263 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:43,683 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:43,687 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:43,687 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:49,596 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:49,599 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 11:54:49,599 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:05:35,626 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:05:35,636 INFO mate.academy.service.AuthenticationServiceImpl User bob found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:05:35,636 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:05:35,637 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:06:40,466 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:06:40,482 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:06:40,482 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:06:40,482 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:08:53,295 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:08:53,308 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:08:53,308 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:08:53,308 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:03,558 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:03,570 INFO mate.academy.service.AuthenticationServiceImpl User 'bob1' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:03,571 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob1
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:03,571 INFO mate.academy.service.AuthenticationServiceImpl Password check succesfull returning user...
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:53,029 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:53,039 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:53,039 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:09:53,039 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:10:18,406 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:10:18,420 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:10:18,420 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:10:18,420 ERROR mate.academy.Main Can`t login with user: {}
+: ERROR mate.academy.Main mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:17) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2024-03-26 12:10:48,416 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:10:48,426 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:10:48,426 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:10:48,426 ERROR mate.academy.Main Can`t login with user: Username or password are incorrect
+: ERROR mate.academy.Main2024-03-26 12:11:43,076 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:11:43,087 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:11:43,087 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:11:43,087 ERROR mate.academy.Main Can`t login with user: Username or password are incorrect
+: ERROR mate.academy.Main2024-03-26 12:12:02,874 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:12:02,886 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:12:02,886 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:12:02,886 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:13:46,778 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:13:46,789 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:13:46,789 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:13:46,789 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:13:46,792 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:15:59,071 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:15:59,081 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:15:59,082 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:15:59,082 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:15:59,084 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:15:59,085 INFO mate.academy.service.OrderServiceImpl Returning 1
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:19:05,264 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:19:05,274 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:19:05,274 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:19:05,274 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:19:05,276 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:19:05,276 INFO mate.academy.service.OrderServiceImpl Method getAllProductsFromShoppingCart was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:19:05,277 INFO mate.academy.service.OrderServiceImpl Returning list of All products
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:19:05,277 INFO mate.academy.service.OrderServiceImpl Returning 1 order ID : 
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:20:12,099 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:20:12,109 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:20:12,109 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:20:12,110 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:20:12,111 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:20:12,111 INFO mate.academy.service.OrderServiceImpl Method getAllProductsFromShoppingCart was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:20:12,112 INFO mate.academy.service.OrderServiceImpl Returning list of All products
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:20:12,112 INFO mate.academy.service.OrderServiceImpl Returning order ID : 1 for user 2
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:22:51,017 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:22:51,026 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:22:51,026 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:22:51,026 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:22:51,028 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:22:51,028 INFO mate.academy.service.OrderServiceImpl Method getAllProductsFromShoppingCart was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:22:51,029 INFO mate.academy.service.OrderServiceImpl Returning list of All products for userId : 2
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:22:51,029 INFO mate.academy.service.OrderServiceImpl Returning order ID : 1
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:06,188 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:06,198 INFO mate.academy.service.AuthenticationServiceImpl User 'bob' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:06,199 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: bob
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:06,199 ERROR mate.academy.Main Can`t login with user: Username or password are incorrect
+: ERROR mate.academy.Main2024-03-26 12:24:18,735 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:18,744 INFO mate.academy.service.AuthenticationServiceImpl User 'null' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:18,745 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: null
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:18,745 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:24:18,745 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:18,745 INFO mate.academy.service.OrderServiceImpl Method getAllProductsFromShoppingCart was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:18,746 INFO mate.academy.service.OrderServiceImpl Returning list of All products for userId : 2
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:18,746 INFO mate.academy.service.OrderServiceImpl Returning order ID : 1
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:40,428 INFO mate.academy.service.AuthenticationServiceImpl Method login was called
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:40,442 INFO mate.academy.service.AuthenticationServiceImpl User 'null' found
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:40,443 INFO mate.academy.service.AuthenticationServiceImpl Attempt to Log In using login: null
+: INFO  mate.academy.service.AuthenticationServiceImpl2024-03-26 12:24:40,443 INFO mate.academy.Main Password check succesfull returning user...
+: INFO  mate.academy.Main2024-03-26 12:24:40,453 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:48,519 INFO mate.academy.service.OrderServiceImpl Method getAllProductsFromShoppingCart was called
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:48,521 INFO mate.academy.service.OrderServiceImpl Returning list of All products for userId : 2
+: INFO  mate.academy.service.OrderServiceImpl2024-03-26 12:24:48,522 INFO mate.academy.service.OrderServiceImpl Returning order ID : 1
+: INFO  mate.academy.service.OrderServiceImpl
