@@ -13,7 +13,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Order completeOrder(Long userId) {
         logger.info("Method completeOrder was called");
-        if (userId == null){
+        if (userId == null) {
             logger.error("Incoming data for userId is null");
         }
         List<Product> products = getAllProductsFromShoppingCart(userId);
