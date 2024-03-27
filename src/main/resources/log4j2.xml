@@ -1,0 +1,22 @@
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config"
+               status="info">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%c:%L] %-5level %logger{36} - %m%n"/>
+        </Console>
+        <File name="LogToFile" fileName="logs/app.log">
+            <PatternLayout pattern="%d %p [%c:%L] %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="mate.academy" level="info" additivity="false">
+            <appender-ref ref="LogToFile"/>
+            <appender-ref ref="LogToConsole"/>
+        </Logger>
+        <Root level="error">
+            <appender-ref ref="LogToFile"/>
+            <appender-ref ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
