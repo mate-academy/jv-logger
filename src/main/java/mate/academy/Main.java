@@ -17,9 +17,8 @@ public class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
-            logger.info("Password check succesfull returning user...");
         } catch (AuthenticationException e) {
-            logger.error("Can`t login with user: {}", e.getMessage());
+            logger.error("Can`t login with user: {}", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
