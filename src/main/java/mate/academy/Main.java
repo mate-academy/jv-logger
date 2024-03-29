@@ -14,14 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user = new User("bill", "qwerty");
+        User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.debug("AuthenticationException was catched with user: login={}",
-                    user.getLogin());
-            throw new RuntimeException("The user: " + user.getLogin()
-                    + "haven't been authenticated", e);
+            logger.error(authenticationService.getClass() + " was catched" + e);
+            throw new RuntimeException("user haven't been authenticated", e);
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
