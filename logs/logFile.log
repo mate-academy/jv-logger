@@ -1,0 +1,6 @@
+2024-04-11 16:13:49,796 INFO mate.academy.service.AuthenticationServiceImpl Login method was called. Login: bob
+2024-04-11 16:13:49,799 INFO mate.academy.service.AuthenticationServiceImpl Login method was called. UserID: 2
+2024-04-11 16:13:49,800 INFO mate.academy.service.AuthenticationServiceImpl The data has been successfully retrieved. UserID: 2
+2024-04-11 16:14:39,675 INFO mate.academy.service.AuthenticationServiceImpl Login method was called. Login: bob
+2024-04-11 16:14:39,677 INFO mate.academy.service.AuthenticationServiceImpl Login method was called. UserID: 2
+2024-04-11 16:14:39,678 INFO mate.academy.service.AuthenticationServiceImpl The data has been successfully retrieved. UserID: 2
