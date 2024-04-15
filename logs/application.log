@@ -1,0 +1,6 @@
+14:18:26.995 [main] INFO  mate.academy.service.AuthenticationServiceImpl - login method was called. Params: login = bob
+14:18:26.999 [main] INFO  mate.academy.service.OrderServiceImpl - Successful fetched data from DB
+14:18:27.000 [main] INFO  mate.academy.service.OrderServiceImpl - completeOrder method was called. Params: userId = 2
+2024-04-15 14:21:34,153 INFO mate.academy.service.AuthenticationServiceImpl:13 login method was called. Params: login = bob
+2024-04-15 14:21:34,160 INFO mate.academy.service.OrderServiceImpl:32 Successful fetched data from DB
+2024-04-15 14:21:34,161 INFO mate.academy.service.OrderServiceImpl:21 completeOrder method was called. Params: userId = 2
