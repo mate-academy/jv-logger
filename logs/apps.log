@@ -1,0 +1,3 @@
+2024-04-21 20:51:41.185 [main] INFO  mate.academy.service.AuthenticationServiceImpl - Login method was call.
+2024-04-21 20:51:41.193 [main] INFO  mate.academy.service.OrderServiceImpl - Complete Order method was called
+2024-04-21 20:51:41.195 [main] INFO  mate.academy.service.OrderServiceImpl - Successful fetched data from DB
