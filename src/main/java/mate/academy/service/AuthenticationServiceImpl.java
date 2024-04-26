@@ -10,7 +10,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Login method was called. Params: {}", login);
+        logger.debug("Login method was called. Params: {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             logger.error("Authentication failed. User: {}", login);
