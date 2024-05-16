@@ -4,10 +4,12 @@
         <Console name="LogToConsole" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH::mm:ss.SSS} %-5level %logger{36} -%msg%n"/>
         </Console>
-        <File name="LogToFile" fileName="logs/app.log">
-            <PatternLayout>
-                <Pattern>%d %p %c:%L %m%n</Pattern>
-            </PatternLayout>
+        <File name="LogToFile" fileName="logs/app.log" append="true">
+            <PatternLayout pattern=" %d %p %c:%L %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" />
+                <SizeBasedTriggeringPolicy size="10MB"  />
+            </Policies>
         </File>
     </Appenders>
     <Loggers>
@@ -15,7 +17,7 @@
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Logger>
-        <Root level = "error">
+        <Root level = "info">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Root>
