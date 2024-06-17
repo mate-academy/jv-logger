@@ -12,11 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
         try {
-            authenticationService.login("bob", "1234");
+            User user = authenticationService.login("bob", "1234");
+            logger.info("User '{}' logged in successfully.", user.getLogin());
         } catch (AuthenticationException e) {
-            logger.error("Can't login", e);
+            logger.error("Can't login user 'bob'", e);
         }
     }
 }
