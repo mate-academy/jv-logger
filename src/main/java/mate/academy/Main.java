@@ -20,7 +20,6 @@ public class Main {
             user = authenticationService.login(LOGIN, "1234");
         } catch (AuthenticationException e) {
             logger.error("Authentication exception. Params: login= {}", LOGIN, e);
-            System.out.println("hello");
             return;
         }
         OrderService orderService = new OrderServiceImpl();

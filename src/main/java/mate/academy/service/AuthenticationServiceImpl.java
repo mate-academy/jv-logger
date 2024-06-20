@@ -11,20 +11,18 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     @Override
     public User login(String login, String password) throws AuthenticationException {
         logger.info("login was called, login: {}", login);
-        System.out.println("login");
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
+            logger.error("Password doesn't match, login: {}", login);
             throw new AuthenticationException("Username or password are incorrect");
         }
-        logger.info("login method ended successfully");
         return user;
     }
 
     private User findByLogin(String login) {
         User user = new User(login, "1234");
         user.setUserId(2L);
-        logger.info("user was found by login: {}", login);
-        System.out.println("find bylogin");
+        logger.info("User was found by login: {}", login);
         return user;
     }
 }

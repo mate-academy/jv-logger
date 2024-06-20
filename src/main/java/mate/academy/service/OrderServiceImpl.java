@@ -17,9 +17,8 @@ public class OrderServiceImpl implements OrderService {
         Order order = new Order(products, userId);
         order.setOrderId(1L);
         logger.info(
-                "comleteOrder was called and run successfully with userId: {}, orderId: {}",
+                "completeOrder was called and run successfully with userId: {}, orderId: {}",
                 userId, order.getOrderId());
-        System.out.println("completeorder");
         return order;
     }
 
