@@ -22,7 +22,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private User findByLogin(String login) {
         User user = new User(login, "1234");
         user.setUserId(2L);
-        logger.debug("User was found by login: {}", login);
+        logger.info("User was found by login: {}", login);
         return user;
     }
 }
