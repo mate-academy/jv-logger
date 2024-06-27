@@ -9,11 +9,11 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="mate.academy" level="info">
+        <Logger name="mate.academy" level="debug">
             <AppenderRef ref="LogToConsole"/>
             <AppenderRef ref="LogToFile"/>
         </Logger>
-        <Root level="debug">
+        <Root level="error">
             <AppenderRef ref="LogToConsole"/>
             <AppenderRef ref="LogToFile"/>
         </Root>
