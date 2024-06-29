@@ -10,10 +10,10 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Login method was called with login: {}", login);
+        logger.info("Login attempt for user with login: {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
-            logger.error("Authentication failed for user: {}", login);
+            logger.error("Authentication failed for user: {}. Reason: Incorrect password.", login);
             throw new AuthenticationException("Username or password are incorrect");
         }
         logger.info("User {} successfully authenticated", login);
@@ -22,7 +22,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     private User findByLogin(String login) {
         User user = new User(login, "1234");
-        // this user identifier should be set by DB. We will use dummy data for this example
         user.setUserId(2L);
         logger.debug("User found with login: {}", login);
         return user;
