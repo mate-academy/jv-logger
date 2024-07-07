@@ -10,15 +10,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    public static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+    public static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
+        String login = "bob";
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(login, "1234");
         } catch (AuthenticationException e) {
-            logger.error("No such user in DB for Login: bob", e);
+            logger.error("No such user in DB for Login: {}", login, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
