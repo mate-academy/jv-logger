@@ -15,10 +15,11 @@ public class Main {
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
+        String login = "bob";
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(login, "1234");
         } catch (AuthenticationException e) {
-            logger.error("Can't authenticate user. Invalid login or password", e);
+            logger.error("Can't authenticate user with login - {}", login, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
