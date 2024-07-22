@@ -17,10 +17,11 @@ public class Main {
         User user = null;
         try {
             user = authenticationService.login("bob", "1234");
-        } catch (AuthenticationException e) {
-            logger.error("Can't login ", e);
+            OrderService orderService = new OrderServiceImpl();
+            orderService.completeOrder(user.getUserId());
+        } catch (AuthenticationException | NullPointerException e) {
+            logger.error("Can't login with parameters {}", "bob", e);
         }
-        OrderService orderService = new OrderServiceImpl();
-        orderService.completeOrder(user.getUserId());
+
     }
 }
