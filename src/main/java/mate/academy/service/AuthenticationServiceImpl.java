@@ -10,7 +10,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        log.info("Service level. Login method was called with params: login = {}", login);
+        log.debug("Service level. Login method was called with params: login = {}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
@@ -23,7 +23,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         User user = new User(login, "1234");
         // this user identifier should be set by DB. We will use dummy data for this example
         user.setUserId(2L);
-        log.debug("Service level. Found user by id: {}, user's data {}",
+        log.info("Service level. Found user by id: {}, user's data {}",
                 user.getUserId(), user);
         return user;
     }
