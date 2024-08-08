@@ -15,6 +15,8 @@
         <maven.checkstyle.plugin.configLocation>
             https://raw.githubusercontent.com/mate-academy/style-guides/master/java/checkstyle.xml
         </maven.checkstyle.plugin.configLocation>
+        <apacheGroupId>org.apache.logging.log4j</apacheGroupId>
+        <apacheVersion>2.23.1</apacheVersion>
     </properties>
 
     <dependencies>
@@ -25,14 +27,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
+            <groupId>${apacheGroupId}</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.23.1</version>
+            <version>${apacheVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
+            <groupId>${apacheGroupId}</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.23.1</version>
+            <version>${apacheVersion}</version>
         </dependency>
     </dependencies>
     <build>
