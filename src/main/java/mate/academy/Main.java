@@ -1,23 +1,31 @@
 package mate.academy;
 
 import mate.academy.exception.AuthenticationException;
-import mate.academy.model.User;
 import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
+import mate.academy.model.User;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
 public class Main {
+    private static final Logger logger = Logger.getLogger(Main.class);
+
     public static void main(String[] args) {
+        BasicConfigurator.configure();
+
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
+        User user = null;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
-            return;
+            logger.error("Can't login", e);
         }
-        OrderService orderService = new OrderServiceImpl();
-        orderService.completeOrder(user.getUserId());
+
+        if (user != null) {
+            OrderService orderService = new OrderServiceImpl();
+            orderService.completeOrder(user.getUserId());
+        }
     }
 }
