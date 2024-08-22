@@ -1,11 +1,11 @@
 package mate.academy;
 
 import mate.academy.exception.AuthenticationException;
+import mate.academy.model.User;
 import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
-import mate.academy.model.User;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
