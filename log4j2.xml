@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders name="FILE">
+        <File fileName="src/logs/app.log">
+            <Pattern>
+                %d %p %C{1.} [%t] %m%n
+            </Pattern>
+        </File>
+        <Console name="CONSOLE">
+            <Pattern>
+                %d %p %C{1.} [%t] %m%n
+            </Pattern>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger level="info">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="FILE"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="FILE"/>
+        </Root>
+    </Loggers>
+</Configuration>
