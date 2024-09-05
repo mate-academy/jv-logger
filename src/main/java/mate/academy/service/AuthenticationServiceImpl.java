@@ -12,7 +12,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     public User login(String login, String password) throws AuthenticationException {
         //TODO: add corresponding log message about method login was called
         User user = findByLogin(login);
-        logger.info("Login method was called for User with login: {}", login);
+        logger.debug("Login method was called for User with login: {}", login);
         if (!user.getPassword().equals(password)) {
             logger.error("WRONG PASSWORD! "
                     + "AuthenticationException throws for User with login: {} ", login);

@@ -22,12 +22,5 @@ public class Main {
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-
-        try {
-            user = authenticationService.login("boben", "12345");
-        } catch (AuthenticationException e) {
-            return;
-        }
-        orderService.completeOrder(user.getUserId());
     }
 }
