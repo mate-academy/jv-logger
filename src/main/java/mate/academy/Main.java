@@ -17,10 +17,11 @@ public class Main {
         User user = null;
         try {
             user = authenticationService.login("bob", "1234");
+            OrderService orderService = new OrderServiceImpl();
+            orderService.completeOrder(user.getUserId());
         } catch (AuthenticationException e) {
-            logger.error("Login failed for user {}", user.getLogin(), e);
+            String login = user != null ? user.getLogin() : "unknown";
+            logger.error("Login failed for user {}", login, e);
         }
-        OrderService orderService = new OrderServiceImpl();
-        orderService.completeOrder(user.getUserId());
     }
 }
