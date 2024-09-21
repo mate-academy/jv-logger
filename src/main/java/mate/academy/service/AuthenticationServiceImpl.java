@@ -10,7 +10,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Method login was called");
+        logger.info("Method login was called with login={}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
@@ -19,12 +19,13 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        logger.debug("Method findByLogin was called");
+        logger.debug("Method findByLogin was called with login={}", login);
         User user = new User(login, "1234");
         // this user identifier should be set by DB. We will use dummy data for this example
         user.setUserId(2L);
         logger.debug("New user was created with login: {}, with ID: {}. Data sent to DB",
-                login, user.getUserId());
+                login,
+                user.getUserId());
         return user;
     }
 }

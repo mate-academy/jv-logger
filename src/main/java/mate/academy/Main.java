@@ -18,11 +18,11 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Invalid login or password for login: {}", user.getLogin());
+            logger.error("Invalid login or password for login");
             return;
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
-        logger.info("Order successfully completed for userID: {}", user.getUserId());
+        logger.info("Order successfully completed for user: {} ", user.getLogin());
     }
 }
