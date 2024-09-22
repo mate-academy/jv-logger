@@ -12,20 +12,21 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.debug("Complete Order. User id is {}", userId);
+        logger.debug("Method: completeOrder. User id: {}", userId);
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
+        logger.info("Order completed for user id: {}. Order id: {}", userId, order.getOrderId());
         return order;
     }
 
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
-        logger.debug("Get all products from shopping cart. User id is {}", userId);
+        logger.debug("Method: getAllProductsFromShoppingCart. User id: {}", userId);
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.info("Successful get all products from shopping cart. User id is {}", userId);
+        logger.info("Method: getAllProductsFromShoppingCart completed successfully. User id: {}, Products: {}", userId, products);
         return products;
     }
 }
