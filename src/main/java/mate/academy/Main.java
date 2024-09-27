@@ -14,11 +14,12 @@ public class Main {
         Logger logger = LogManager.getLogger(Main.class);
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
+        String login = "bob";
 
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(login, "1234");
         } catch (AuthenticationException e) {
-            logger.error("An authentication exception occurred.");
+            logger.error("Failed to authenticate user with login: {}", login, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
