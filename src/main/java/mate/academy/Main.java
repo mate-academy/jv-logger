@@ -23,6 +23,6 @@ public class Main {
             return;
         }
         OrderService orderService = new OrderServiceImpl();
-        orderService.completeOrder(user.getUserId());
+        orderService.completeOrder(user.getUserId()); ///
     }
 }
