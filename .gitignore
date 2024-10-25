@@ -1,2 +1,5 @@
-# Ignore log files
-*.log
+.idea/*
+*.iml
+target/*
+# Ignore all files in the logs package
+logs/
