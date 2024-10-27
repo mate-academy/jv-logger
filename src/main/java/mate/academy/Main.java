@@ -17,7 +17,7 @@ public class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
-            logger.info("User {} logged in successfully.", user);
+            logger.info("User {} logged in successfully.", user.getLogin());
         } catch (AuthenticationException e) {
             logger.error("Login failed for user bob with message: {}", e.getMessage());
             return;
