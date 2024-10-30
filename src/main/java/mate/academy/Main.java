@@ -14,15 +14,20 @@ public class Main {
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
-        User user;
+        User user = null;
         try {
             user = authenticationService.login("bob", "1234");
-            logger.info("User {} logged in successfully.", user.getLogin());
+            logger.info("User {} logged in successfully.", getUserLogin(user));
         } catch (AuthenticationException e) {
-            logger.error("Login failed for user bob with message: {}", e.getMessage());
+            logger.error("Login failed for user {} with message: {}", getUserLogin(user), e.getMessage(), e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
+    }
+
+    private static String getUserLogin(User user) {
+        // there is no input username, so I return an empty one
+        return user != null ? user.getLogin() : "";
     }
 }
