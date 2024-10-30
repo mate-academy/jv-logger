@@ -19,7 +19,8 @@ public class Main {
             user = authenticationService.login("bob", "1234");
             logger.info("User {} logged in successfully.", getUserLogin(user));
         } catch (AuthenticationException e) {
-            logger.error("Login failed for user {} with message: {}", getUserLogin(user), e.getMessage(), e);
+            logger.error("Login failed for user {} with message: {}",
+                    getUserLogin(user), e.getMessage(), e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
