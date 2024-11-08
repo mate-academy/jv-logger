@@ -15,12 +15,10 @@ public class Main {
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
-        String username = "";
         try {
             user = authenticationService.login("bob", "1234");
-            username = user.getLogin();
         } catch (AuthenticationException e) {
-            logger.error("Can't login a user: {}", username, e);
+            logger.error("Authentication failed: Invalid username or password", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
