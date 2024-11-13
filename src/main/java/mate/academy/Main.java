@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     public static void main(String[] args) {
-        Logger logger= LogManager.getLogger(Main.class);
+        Logger logger = LogManager.getLogger(Main.class);
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
