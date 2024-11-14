@@ -20,10 +20,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private User findByLogin(String login) {
-        logger.debug("Method findByLogin was called. Params: {}", login);
         User user = new User(login, "1234");
         user.setUserId(2L);
-        logger.debug("Method findByLogin worked successfully. Params: {}", login);
         return user;
     }
 }
