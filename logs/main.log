@@ -1,0 +1,18 @@
+12:20:48 INFO mate.academy.service.AuthenticationServiceImpl:18 - login methode was called, login: mate.academy.model.User@54e1c68b
+12:20:48 INFO mate.academy.service.AuthenticationServiceImpl:18 - login methode was called, login: mate.academy.model.User@54e1c68b
+12:20:48 INFO mate.academy.service.OrderServiceImpl:29 - successful fetched data: 2: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:20:48 INFO mate.academy.service.OrderServiceImpl:29 - successful fetched data: 2: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:20:48 INFO mate.academy.service.OrderServiceImpl:19 - 1 order was made, product: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:20:48 INFO mate.academy.service.OrderServiceImpl:19 - 1 order was made, product: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:21:52 INFO mate.academy.service.AuthenticationServiceImpl:18 - login methode was called, login: mate.academy.model.User@54e1c68b
+12:21:52 INFO mate.academy.service.AuthenticationServiceImpl:18 - login methode was called, login: mate.academy.model.User@54e1c68b
+12:21:52 INFO mate.academy.service.OrderServiceImpl:29 - successful fetched data: 2: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:21:52 INFO mate.academy.service.OrderServiceImpl:29 - successful fetched data: 2: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:21:52 INFO mate.academy.service.OrderServiceImpl:19 - 1 order was made, product: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+12:21:52 INFO mate.academy.service.OrderServiceImpl:19 - 1 order was made, product: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+18:44:43 INFO mate.academy.service.AuthenticationServiceImpl:17 - login methode was called, login: mate.academy.model.User@54e1c68b
+18:44:43 INFO mate.academy.service.AuthenticationServiceImpl:17 - login methode was called, login: mate.academy.model.User@54e1c68b
+18:44:43 INFO mate.academy.service.OrderServiceImpl:27 - successful fetched data: 2: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+18:44:43 INFO mate.academy.service.OrderServiceImpl:27 - successful fetched data: 2: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+18:44:43 INFO mate.academy.service.OrderServiceImpl:18 - 1 order was made, product: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
+18:44:43 INFO mate.academy.service.OrderServiceImpl:18 - 1 order was made, product: [mate.academy.model.Product@a38c7fe, mate.academy.model.Product@6fdbe764, mate.academy.model.Product@51c668e3]
