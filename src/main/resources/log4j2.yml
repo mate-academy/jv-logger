@@ -13,14 +13,11 @@ Configuration:
   Loggers:
     Logger:
       name: "mate.academy"
-      level: "INFO"
       additivity: "false"
+      level: "DEBUG"
       AppenderRef:
         - ref: "FILE"
-        - ref: "CONSOLE"
     Root:
-      level: "ERROR"
+      level: "INFO"
       AppenderRef:
         - ref: "CONSOLE"
-        - ref: "FILE"
-
