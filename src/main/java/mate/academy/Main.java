@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Failed login attempt. Reason: {}", e.getMessage());
+            logger.error("Failed login attempt. Reason: {}", e.getMessage(), e);
             throw new RuntimeException("Username or password are incorrect" + e);
         }
         OrderService orderService = new OrderServiceImpl();
