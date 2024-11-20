@@ -10,7 +10,7 @@ import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
 
 public class Main {
-    private static final Logger logger = Logger.getGlobal();
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();

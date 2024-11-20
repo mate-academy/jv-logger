@@ -8,7 +8,7 @@ import mate.academy.model.Order;
 import mate.academy.model.Product;
 
 public class OrderServiceImpl implements OrderService {
-    private final Logger logger = Logger.getGlobal();
+    private final Logger logger = Logger.getLogger(OrderServiceImpl.class.getName());
 
     @Override
     public Order completeOrder(Long userId) {

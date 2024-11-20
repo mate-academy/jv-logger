@@ -6,7 +6,7 @@ import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
-    private final Logger logger = Logger.getGlobal();
+    private final Logger logger = Logger.getLogger(AuthenticationServiceImpl.class.getName());
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
