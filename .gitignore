@@ -1,3 +1,2 @@
-.idea/*
-*.iml
-target/*
+appLog.log
+appLog.log.*.gz
