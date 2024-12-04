@@ -3,7 +3,6 @@
 <file name="C:\Users\Asus\IdeaProjects\jv-logger\src\main\java\mate\academy\exception\AuthenticationException.java">
 </file>
 <file name="C:\Users\Asus\IdeaProjects\jv-logger\src\main\java\mate\academy\Main.java">
-<error line="14" column="5" severity="error" message="&apos;METHOD_DEF&apos; should be separated from previous line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 </file>
 <file name="C:\Users\Asus\IdeaProjects\jv-logger\src\main\java\mate\academy\model\Order.java">
 </file>
