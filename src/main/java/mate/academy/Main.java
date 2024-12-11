@@ -18,7 +18,8 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Login failed for user with the provided credentials. Params: login -{}",e.getMessage(), e);
+            logger.error("Login failed for user with the provided credentials. Params: login -{}",
+                    e.getMessage(), e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
