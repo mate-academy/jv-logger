@@ -22,9 +22,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     private User findByLogin(String login) {
         logger.info("Searching for user with login: " + login);
-        User user = new User(login, "1234");
-        user.setUserId(2L);
-        logger.info("User found with login: " + login);
-        return user;
+        throw new UnsupportedOperationException("Implement database connection to retrieve user");
     }
 }
