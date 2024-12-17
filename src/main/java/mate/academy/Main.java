@@ -18,7 +18,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("AuthenticationException with incorrect data.");
+            logger.error("Method login was called. Params: login = ", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
