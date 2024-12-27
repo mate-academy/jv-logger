@@ -21,7 +21,7 @@ public class Main {
             logger.error("Authentication failed for username 'bob'. Reason: {}", e.getMessage());
         }
         logger.info("Attempting to complete order for user ID '{}'.",
-            user != null ? user.getUserId() : null);
+                user != null ? user.getUserId() : null);
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user != null ? user.getUserId() : null);
     }
