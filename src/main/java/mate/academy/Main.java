@@ -20,8 +20,9 @@ public class Main {
         } catch (AuthenticationException e) {
             logger.error("Authentication failed for username 'bob'. Reason: {}", e.getMessage());
         }
-        logger.info("Attempting to complete order for user ID '{}'.", user.getUserId());
+        logger.info("Attempting to complete order for user ID '{}'.",
+            user != null ? user.getUserId() : null);
         OrderService orderService = new OrderServiceImpl();
-        orderService.completeOrder(user.getUserId());
+        orderService.completeOrder(user != null ? user.getUserId() : null);
     }
 }
