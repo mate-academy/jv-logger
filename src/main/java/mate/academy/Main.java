@@ -18,8 +18,8 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Failed to log in. Username: {}. "
-                    + "Login or password are incorrect.", "bob", e);
+            logger.error("Failed to log in. "
+                    + "Login or password are incorrect.", e);
 
             return;
         }
