@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status = "info">
+    <Appenders>
+        <Console name="logToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36}:%L - %msg%n" />
+        </Console>
+        <File name="logToFile" fileName="logs/app.log">
+            <PatternLayout>
+                <Pattern>%d %p %c:%L %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="mate.academy" level="info" additivity="false">
+            <AppenderRef ref="logToFile"/>
+            <AppenderRef ref="logToConsole"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="logToFile"/>
+            <AppenderRef ref="logToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>
