@@ -16,8 +16,8 @@ public class OrderServiceImpl implements OrderService {
         List<Product> products = getAllProductsFromShoppingCart(userId);
         Order order = new Order(products, userId);
         order.setOrderId(1L);
-        logger.info("CompleteOrder method was called."
-                + " User with UserID = {} . Successfully made order", userId);
+        logger.info("CompleteOrder method was called. User "
+                + "with UserID = {} successfully made order", userId);
         return order;
     }
 
