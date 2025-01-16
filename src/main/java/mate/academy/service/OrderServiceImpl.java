@@ -25,13 +25,15 @@ public class OrderServiceImpl implements OrderService {
     private List<Product> getAllProductsFromShoppingCart(Long userId) {
         // NOTE: In production ready code this method should fetch data from DB
         // For test purpose we simplify this method and return dummy data
-        logger.info("getAllProductsFromShoppingCart() method was called. Params: userId = {}", userId);
+        logger.info("getAllProductsFromShoppingCart() method was called. "
+                + "Params: userId = {}", userId);
         Product iphone = new Product("iPhone X", BigDecimal.valueOf(1199));
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
         // TODO: add log message about successful fetched data from DB
-        logger.info("getAllProductsFromShoppingCart() data fetched.\n   Received: data = {}",
+        logger.info("getAllProductsFromShoppingCart() data fetched.\n\t"
+                        + "Received: data = {}",
                 products.stream()
                         .map(Product::toString)
                         .toList()
