@@ -24,5 +24,6 @@ public class Main {
         }
         OrderService orderService = new OrderServiceImpl();
         orderService.completeOrder(user.getUserId());
+        logger.info("Current working directory: {}", System.getProperty("user.dir"));
     }
 }
