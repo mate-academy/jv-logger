@@ -19,7 +19,7 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error("Username or password are incorrect", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
