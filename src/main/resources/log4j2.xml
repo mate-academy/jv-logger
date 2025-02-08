@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="CONSOLE">
+            <PatternLayout pattern="%d{ISO8601}{America/New_York} %p - %m%n"/>
+        </Console>
+        <File name="DEBUG_FILE_LOG" fileName="logs/debug.log">
+            <PatternLayout pattern="%d [%t] %p %c - %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="ERROR">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="DEBUG_FILE_LOG"/>
+        </Root>
+        <Logger name="mate.academy" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="DEBUG_FILE_LOG"/>
+        </Logger>
+    </Loggers>
+</Configuration>
