@@ -9,6 +9,8 @@ import mate.academy.service.OrderServiceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.time.LocalDateTime;
+
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
@@ -18,8 +20,8 @@ public class Main {
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.trace("Main class - catch method", e);
-//            e.printStackTrace();
+            logger.trace("Authentication failed for user: {} at {} - Reason: {}",
+                    "bob", LocalDateTime.now(), e.getMessage());
             return;
         }
         OrderService orderService = new OrderServiceImpl();

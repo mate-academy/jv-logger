@@ -5,12 +5,16 @@ import mate.academy.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.time.LocalDateTime;
+
 public class AuthenticationServiceImpl implements AuthenticationService {
     public static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
         logger.info("AuthenticationServiceImpl called");
+        logger.info("Authentication called for user login: {} at {}",
+                login, LocalDateTime.now());
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
