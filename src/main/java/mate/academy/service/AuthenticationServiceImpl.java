@@ -2,10 +2,9 @@ package mate.academy.service;
 
 import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
+import java.time.LocalDateTime;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.time.LocalDateTime;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
     public static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
