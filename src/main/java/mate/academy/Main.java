@@ -13,14 +13,13 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("Log4j is working!");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
             logger.info("User {} successfully logged in", user.getLogin());
         } catch (AuthenticationException e) {
-            logger.error("Authentication failed for user 'bob'", e);
+            logger.error("Authentication failed.", e);
             return;
         }
         
