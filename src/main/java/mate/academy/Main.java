@@ -17,11 +17,14 @@ public class Main {
         User user;
         try {
             user = authenticationService.login("bob", "1234");
+            logger.info("User logged in successfully: {}", user.getLogin());
         } catch (AuthenticationException e) {
-            logger.error("AuthenticationException exception with login: {}", "bob");
+            logger.error("Authentication failed for login: bob", e);
             throw new RuntimeException("Username or password are incorrect", e);
         }
-        OrderService orderService = new OrderServiceImpl();
-        orderService.completeOrder(user.getUserId());
+        if (user != null) {
+            OrderService orderService = new OrderServiceImpl();
+            orderService.completeOrder(user.getUserId());
+        }
     }
 }
