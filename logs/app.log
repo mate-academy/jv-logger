@@ -1,0 +1,21 @@
+2025-03-19 17:15:26,126 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2025-03-19 17:15:26,127 INFO mate.academy.service.OrderServiceImpl:16 completeOrder method was called
+2025-03-19 17:15:26,128 INFO mate.academy.service.OrderServiceImpl:34 successful fetched data from DB
+2025-03-19 17:17:47,868 INFO mate.academy.service.AuthenticationServiceImpl:14 method login was called
+2025-03-19 17:17:47,869 INFO mate.academy.service.OrderServiceImpl:16 completeOrder method was called
+2025-03-19 17:17:47,870 INFO mate.academy.service.OrderServiceImpl:34 successful fetched data from DB
+2025-03-19 17:21:10,491 INFO mate.academy.service.AuthenticationServiceImpl:13 method login was called
+2025-03-19 17:21:10,492 INFO mate.academy.service.OrderServiceImpl:15 completeOrder method was called
+2025-03-19 17:21:10,493 INFO mate.academy.service.OrderServiceImpl:27 successful fetched data from DB
+2025-03-19 17:24:14,110 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login=bob
+2025-03-19 17:24:14,111 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB
+2025-03-19 17:24:14,111 INFO mate.academy.service.OrderServiceImpl:18 Method completeOrder was called. Params: order=mate.academy.model.Order@6a6cb05c
+2025-03-19 17:25:32,359 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login=bob
+2025-03-19 17:25:32,360 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB
+2025-03-19 17:25:32,360 INFO mate.academy.service.OrderServiceImpl:18 Method completeOrder was called. Params: userId=2, products=[mate.academy.model.Product@2d1ef81a, mate.academy.model.Product@4c402120, mate.academy.model.Product@327514f]
+2025-03-19 17:26:17,176 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login=bob
+2025-03-19 17:26:17,178 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB
+2025-03-19 17:26:17,178 INFO mate.academy.service.OrderServiceImpl:18 Method completeOrder was called
+2025-03-19 17:30:11,758 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params: login=bob
+2025-03-19 17:30:11,759 INFO mate.academy.service.OrderServiceImpl:27 Successful fetched data from DB for userId=2
+2025-03-19 17:30:11,759 INFO mate.academy.service.OrderServiceImpl:18 Method completeOrder was called for userId=2
