@@ -1,0 +1,4 @@
+2025-03-23 12:27:47,255 INFO mate.academy.service.OrderServiceImpl:31 successful retrieval of userId: 2 data from the database 
+2025-03-23 12:28:48,676 DEBUG mate.academy.service.AuthenticationServiceImpl:12 Login method was called. Params: login = bob
+2025-03-23 12:28:48,680 DEBUG mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. UserId = 2 
+2025-03-23 12:28:48,681 INFO mate.academy.service.OrderServiceImpl:31 successful retrieval of userId: 2 data from the database 
