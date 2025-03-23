@@ -2,3 +2,6 @@
 2025-03-23 12:28:48,676 DEBUG mate.academy.service.AuthenticationServiceImpl:12 Login method was called. Params: login = bob
 2025-03-23 12:28:48,680 DEBUG mate.academy.service.OrderServiceImpl:14 Method completeOrder was called. UserId = 2 
 2025-03-23 12:28:48,681 INFO mate.academy.service.OrderServiceImpl:31 successful retrieval of userId: 2 data from the database 
+2025-03-23 12:41:49,110 DEBUG mate.academy.service.AuthenticationServiceImpl:13 Login method was called. Params: login = bob
+2025-03-23 12:41:49,113 DEBUG mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. UserId = 2 
+2025-03-23 12:41:49,114 INFO mate.academy.service.OrderServiceImpl:27 Returning hardcoded product list for userId: 2
