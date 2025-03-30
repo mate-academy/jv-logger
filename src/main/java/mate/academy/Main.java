@@ -13,13 +13,12 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("This is an 'info' level log message!");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("This is an 'error' level log message!", e);
+            logger.error("This is an 'error' level log message! Params: exception={}", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
