@@ -8,15 +8,23 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class OrderServiceImpl implements OrderService {
+
     private static final Logger logger = LogManager.getLogger(OrderServiceImpl.class);
 
     @Override
     public Order completeOrder(Long userId) {
-        logger.info("completeOrder method called for user ID: " + userId);
+        logger.info("completeOrder method called for user ID: {}", userId);
+
         List<Product> products = getAllProductsFromShoppingCart(userId);
+
+        logger.info("completeOrder method called for user ID: {}. Products count: {}",
+                userId, products.size());
+
         Order order = new Order(products, userId);
         order.setOrderId(1L);
-        logger.info("Order successfully created for user ID: " + userId);
+
+        logger.info("Order {} successfully created for user ID: {}", order.getOrderId(), userId);
+
         return order;
     }
 
@@ -25,7 +33,9 @@ public class OrderServiceImpl implements OrderService {
         Product macBook = new Product("MacBook Air 2020", BigDecimal.valueOf(1399));
         Product xiaomi = new Product("Xiaomi 12", BigDecimal.valueOf(499));
         List<Product> products = List.of(iphone, macBook, xiaomi);
-        logger.debug("Successfully fetched products from shopping cart for user ID: " + userId);
+        logger.debug("Successfully fetched products from shopping cart for user ID: {}. "
+                + "Products: {}", userId, products);
+
         return products;
     }
 }
