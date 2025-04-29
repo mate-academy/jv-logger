@@ -1,7 +1,9 @@
 package mate.academy.model;
 
 import java.math.BigDecimal;
+import lombok.ToString;
 
+@ToString
 public class Product {
     private String title;
     private BigDecimal price;
