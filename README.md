@@ -6,4 +6,6 @@
 1. Complete all `TODO` statements
 1. Replace all `e.printStackTrace();` with corresponding logger methods
 
+To test your code coverage locally - run `mvn clean verify` in the terminal.
+
 [Try to avoid these common mistakes while solving task](./checklist.md)
