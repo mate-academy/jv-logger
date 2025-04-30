@@ -1,0 +1,9 @@
+pattern 2025-01-06 00:34:46,015 INFO mate.academy.service.AuthenticationServiceImpl Method login was called : bob
+pattern 2025-01-06 00:34:46,023 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called : 2
+pattern 2025-01-06 00:34:46,026 INFO mate.academy.service.OrderServiceImpl Data was successfully fetched from DB
+pattern 2025-01-06 00:41:54,983 INFO mate.academy.service.AuthenticationServiceImpl Method login was called : bob
+pattern 2025-01-06 00:41:54,992 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called : 2
+pattern 2025-01-06 00:41:54,995 INFO mate.academy.service.OrderServiceImpl Data was successfully fetched from DB
+pattern 2025-01-06 00:50:08,730 INFO mate.academy.service.AuthenticationServiceImpl Method login was called : bob
+pattern 2025-01-06 00:50:08,752 INFO mate.academy.service.OrderServiceImpl Method completeOrder was called : 2
+pattern 2025-01-06 00:50:08,756 INFO mate.academy.service.OrderServiceImpl Data was successfully fetched from DB
