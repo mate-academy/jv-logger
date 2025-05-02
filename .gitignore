@@ -1,3 +1,9 @@
+# IntelliJ IDEA files
 .idea/*
 *.iml
+
+# Build output
 target/*
+
+# Log files
+*.log
