@@ -7,7 +7,7 @@ public class Order {
     private List<Product> products;
     private Long userId; // the identifier of user who complete the order
 
-    public Order() {
+    public Order(Long orderId) {
     }
 
     public Order(List<Product> products, Long userId) {
