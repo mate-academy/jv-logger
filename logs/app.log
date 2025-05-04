@@ -1,0 +1,6 @@
+2024-05-15 00:05:28,900 INFO mate.academy.Main 20 Login method was called. Params: login = bob 
+2024-05-15 00:05:28,906 INFO mate.academy.Main 21 User bob logged in. 
+2024-05-15 00:13:21,572 INFO mate.academy.service.AuthenticationServiceImpl 13 Login method was called. Params: login = bob 
+2024-05-15 00:13:21,577 INFO mate.academy.service.AuthenticationServiceImpl 18 User bob logged in. 
+2024-05-15 00:13:21,578 INFO mate.academy.Main 20 Login method was called. Params: login = bob 
+2024-05-15 00:13:21,579 INFO mate.academy.Main 21 User bob logged in. 
