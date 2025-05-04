@@ -1,3 +1,6 @@
 .idea/*
 *.iml
 target/*
+#Log File
+logs/
+*.log
