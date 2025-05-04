@@ -1,3 +1,17 @@
-.idea/*
+# IntelliJ IDEA project files
+.idea/
 *.iml
-target/*
+
+# Maven target directory
+target/
+
+# Log files directory
+logs/
+
+#Backup and temporary files
+*.bak
+*.tmp
+*.swp
+
+# Windows
+Thumbs.db
