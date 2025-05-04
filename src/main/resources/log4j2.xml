@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout disableAnsi="false"  pattern="%highlight{%d{HH:mm:ss.SSS} %-5level %logger{36}.%M() @%L - %msg%n}{FATAL=red bold, ERROR=red, WARN=yellow bold, INFO=blue, DEBUG=green, TRACE=white}"/>
+        </Console>
+        <File name="FileAppenderAll" fileName="logs/logs-${date:yyyy.MM.dd}.log" immediateFlush="false" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="FileAppenderInfo" fileName="logs/info-${date:yyyy.MM.dd}.log" immediateFlush="false" append="true">
+            <LevelRangeFilter maxLevel="INFO"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="mate.academy" level="TRACE">
+            <AppenderRef ref="FileAppenderAll"/>
+            <AppenderRef ref="FileAppenderInfo"/>
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <Root level="error">
+        </Root>
+    </Loggers>
+</Configuration>
