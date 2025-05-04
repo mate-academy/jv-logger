@@ -1,0 +1,3 @@
+2025-04-16 15:02:46 INFO  AuthenticationServiceImpl:12 - Login method was called
+2025-04-16 15:02:46 INFO  OrderServiceImpl:14 - Method: completeOrder was called
+2025-04-16 15:02:46 INFO  OrderServiceImpl:30 - Successful fetched data from DB with userID = 2. DB = [mate.academy.model.Product@7e057f43, mate.academy.model.Product@6c284af, mate.academy.model.Product@5890e879]
