@@ -1,0 +1,15 @@
+2023-03-15 16:18:27,065 DEBUG mate.academy.service.AuthenticationServiceImpl:14 Login method was called. Login: login=bob
+2023-03-15 16:18:27,068 DEBUG mate.academy.service.OrderServiceImpl:16 CompleteOrder method was called. Params: userId: userId=2
+2023-03-15 16:18:27,069 DEBUG mate.academy.service.OrderServiceImpl:33 Data from getAllProductsFromShoppingCart method 
+was successfully fetched. Params: userId UserId=2. 
+Data Base: products=[Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-03-15 16:19:34,988 DEBUG mate.academy.service.AuthenticationServiceImpl:14 Login method was called. Login: login=bob
+2023-03-15 16:19:34,991 DEBUG mate.academy.service.OrderServiceImpl:16 CompleteOrder method was called. Params: userId: userId=2
+2023-03-15 16:19:34,992 DEBUG mate.academy.service.OrderServiceImpl:33 Data from getAllProductsFromShoppingCart method 
+was successfully fetched. Params: UserId=2. 
+Data Base: products=[Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
+2023-03-15 16:20:01,273 DEBUG mate.academy.service.AuthenticationServiceImpl:14 Login method was called. Login: login=bob
+2023-03-15 16:20:01,277 DEBUG mate.academy.service.OrderServiceImpl:16 CompleteOrder method was called. Params: userId: userId=2
+2023-03-15 16:20:01,278 DEBUG mate.academy.service.OrderServiceImpl:33 Data from getAllProductsFromShoppingCart method 
+was successfully fetched. Params: userId=2. 
+Data Base: products=[Product{title='iPhone X', price=1199}, Product{title='MacBook Air 2020', price=1399}, Product{title='Xiaomi 12', price=499}]
