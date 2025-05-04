@@ -1,0 +1,20 @@
+2022-12-13 20:29:50,744 INFO mate.academy.service.AuthenticationServiceImpl:13 Meyhod login was called
+2022-12-13 20:29:50,744 INFO mate.academy.service.AuthenticationServiceImpl:13 Meyhod login was called
+2022-12-13 20:32:24,879 INFO mate.academy.service.AuthenticationServiceImpl:13 Meyhod login was called
+2022-12-13 20:32:49,799 INFO mate.academy.service.AuthenticationServiceImpl:13 Meyhod login was called
+2022-12-13 20:36:24,131 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called
+2022-12-13 20:36:24,138 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called
+2022-12-13 20:36:24,140 INFO mate.academy.service.OrderServiceImpl:30 Successful fetched data from DB
+2022-12-13 20:39:38,010 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Params login =bob
+2022-12-13 20:39:38,030 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called
+2022-12-13 20:39:38,032 INFO mate.academy.service.OrderServiceImpl:30 Successful fetched data from DB
+2022-12-13 20:45:11,378 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Params login = bob
+2022-12-13 20:45:11,389 INFO mate.academy.service.OrderServiceImpl:14 Method completeOrder was called
+2022-12-13 20:45:11,391 INFO mate.academy.service.OrderServiceImpl:30 Successful fetched data from DB
+2022-12-13 20:47:17,927 INFO mate.academy.service.AuthenticationServiceImpl:12 Method login was called. Params login = bob
+2022-12-13 20:47:17,937 ERROR mate.academy.Main:20 Cant login
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:15) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:18) ~[classes/:?]
+2022-12-13 20:48:36,791 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called. Params login = bob
+2022-12-13 20:48:36,805 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called
