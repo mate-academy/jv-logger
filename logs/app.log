@@ -1,0 +1,10 @@
+2025-05-05 11:43:31 INFO  m.a.s.AuthenticationServiceImpl - login() called with: bob
+2025-05-05 11:43:31 INFO  m.a.s.AuthenticationServiceImpl - User bob successfully logged in
+2025-05-05 11:43:31 INFO  m.academy.service.OrderServiceImpl - Method completeOrder was called with user ID: 2 
+2025-05-05 11:43:31 INFO  m.academy.service.OrderServiceImpl - Data from database was loaded successfully for userID : 2
+2025-05-05 11:44:14 INFO  m.a.s.AuthenticationServiceImpl - login() called with: bob
+2025-05-05 11:44:14 INFO  m.a.s.AuthenticationServiceImpl - User bob successfully logged in
+2025-05-05 11:44:14 INFO  m.academy.service.OrderServiceImpl - Method completeOrder was called with user ID: 2 
+2025-05-05 11:44:14 INFO  m.academy.service.OrderServiceImpl - Data from database was loaded successfully for userID : 2
+2025-05-05 11:44:27 INFO  m.a.s.AuthenticationServiceImpl - login() called with: bob
+2025-05-05 11:44:27 ERROR m.a.s.AuthenticationServiceImpl - User or password are incorrect
