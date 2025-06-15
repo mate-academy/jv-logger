@@ -1,11 +1,12 @@
 package mate.academy.service;
 
+import java.util.logging.Logger;
 import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
-import java.util.logging.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
-    private static final Logger logger = Logger.getLogger(AuthenticationServiceImpl.class.getName());
+    private static final Logger logger = Logger.getLogger(AuthenticationServiceImpl
+            .class.getName());
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
