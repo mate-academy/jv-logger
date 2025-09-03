@@ -5,7 +5,7 @@ import java.util.List;
 public class Order {
     private Long orderId;
     private List<Product> products;
-    private Long userId; // the identifier of user who complete the order
+    private Long userId;
 
     public Order() {
     }
