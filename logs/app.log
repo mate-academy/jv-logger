@@ -1,0 +1,8 @@
+2025-09-18 16:40:18,792 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login=bob
+2025-09-18 16:40:18,796 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
+2025-09-18 16:40:18,798 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
+2025-09-18 16:40:18,815 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
+2025-09-18 16:44:35,323 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login=bob
+2025-09-18 16:44:35,328 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
+2025-09-18 16:44:35,330 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
+2025-09-18 16:44:35,348 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
