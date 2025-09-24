@@ -1,8 +1,27 @@
-2025-09-18 16:40:18,792 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login=bob
-2025-09-18 16:40:18,796 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
-2025-09-18 16:40:18,798 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
-2025-09-18 16:40:18,815 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
-2025-09-18 16:44:35,323 INFO mate.academy.service.AuthenticationServiceImpl:14 Method login was called. Params: login=bob
-2025-09-18 16:44:35,328 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
-2025-09-18 16:44:35,330 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
-2025-09-18 16:44:35,348 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
+12:21:18.897 [main] INFO  mate.academy.service.AuthenticationServiceImpl - Method login was called with login=bob
+12:21:18.901 [main] INFO  mate.academy.service.AuthenticationServiceImpl - findByLogin returned user with id=2 for login=bob
+12:21:18.902 [main] INFO  mate.academy.service.AuthenticationServiceImpl - User with login=bob successfully authenticated
+12:21:18.902 [main] INFO  mate.academy.Main - User logged in successfully: mate.academy.model.User@4bb33f74
+12:21:18.903 [main] INFO  mate.academy.service.OrderServiceImpl - Method completeOrder was called. Params: userID=2
+12:21:18.916 [main] INFO  mate.academy.service.OrderServiceImpl - Successfully fetched products from shopping cart for userId=2
+2025-09-24 12:31:04,136 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with login=bob
+2025-09-24 12:31:04,140 INFO mate.academy.service.AuthenticationServiceImpl:22 User with login=bob successfully authenticated
+2025-09-24 12:31:04,140 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
+2025-09-24 12:31:04,141 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
+2025-09-24 12:31:04,157 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
+2025-09-24 12:31:50,197 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with login=bob
+2025-09-24 12:31:50,203 ERROR mate.academy.service.AuthenticationServiceImpl:18 Failed login attempt for login=bob
+2025-09-24 12:31:50,204 ERROR mate.academy.Main:22 Can`t login
+mate.academy.exception.AuthenticationException: Username or password are incorrect
+	at mate.academy.service.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:19) ~[classes/:?]
+	at mate.academy.Main.main(Main.java:19) [classes/:?]
+2025-09-24 12:32:12,556 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with login=bob
+2025-09-24 12:32:12,560 INFO mate.academy.service.AuthenticationServiceImpl:22 User with login=bob successfully authenticated
+2025-09-24 12:32:12,561 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
+2025-09-24 12:32:12,562 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
+2025-09-24 12:32:12,577 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
+2025-09-24 12:32:19,238 INFO mate.academy.service.AuthenticationServiceImpl:13 Method login was called with login=bob
+2025-09-24 12:32:19,243 INFO mate.academy.service.AuthenticationServiceImpl:22 User with login=bob successfully authenticated
+2025-09-24 12:32:19,244 INFO mate.academy.Main:20 User logged in successfully: mate.academy.model.User@7c711375
+2025-09-24 12:32:19,245 INFO mate.academy.service.OrderServiceImpl:15 Method completeOrder was called. Params: userID=2
+2025-09-24 12:32:19,259 INFO mate.academy.service.OrderServiceImpl:31 Successfully fetched products from shopping cart for userId=2
