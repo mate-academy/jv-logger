@@ -1,0 +1,5 @@
+2025-10-14 13:04:12 [main] INFO  mate.academy.Main - Application started
+2025-10-14 13:04:12 [main] INFO  m.a.s.AuthenticationServiceImpl - User login successful. login=bob, userId=2
+2025-10-14 13:04:12 [main] INFO  m.academy.service.OrderServiceImpl - completeOrder() called. userId=2
+2025-10-14 13:04:12 [main] INFO  m.academy.service.OrderServiceImpl - Order completed successfully. userId=2, orderId=1, productsCount=3
+2025-10-14 13:04:12 [main] INFO  mate.academy.Main - Application finished successfully
