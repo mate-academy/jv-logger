@@ -1,3 +1,10 @@
 .idea/*
 *.iml
 target/*
+
+#Package with loggers.
+logs/*
+#Logger file.
+*.xml
+#Package with conditional db.
+src/main/resources/*
