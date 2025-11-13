@@ -24,6 +24,6 @@ public class Main {
             return;
         }
         OrderService orderService = new OrderServiceImpl();
-        System.out.println(orderService.completeOrder(user.getUserId()));
+        logger.info(orderService.completeOrder(user.getUserId()));
     }
 }
