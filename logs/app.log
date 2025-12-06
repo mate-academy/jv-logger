@@ -1,0 +1,2 @@
+2025-12-06 14:55:06 INFO  mate.academy.service.AuthenticationServiceImpl - Method login() was called for user 'bob
+2025-12-06 14:55:06 INFO  mate.academy.service.AuthenticationServiceImpl - User 'bob' successfully logged 
