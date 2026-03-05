@@ -1,0 +1,6 @@
+2026-03-05 13:52:58,369 DEBUG mate.academy.service.AuthenticationServiceImpl:14 login method was called
+2026-03-05 13:54:55,043 INFO mate.academy.service.AuthenticationServiceImpl:14 login method was called
+2026-03-05 13:56:38,576 INFO mate.academy.service.AuthenticationServiceImpl:14 login method was called. Params: login = bob
+2026-03-05 13:57:50,782 INFO mate.academy.service.AuthenticationServiceImpl:16 login method was called. Params: login = bob
+2026-03-05 21:01:01,716 INFO mate.academy.service.AuthenticationServiceImpl:14 login method was called. Params: login = bob
+2026-03-05 21:01:01,716 INFO mate.academy.service.AuthenticationServiceImpl:13 method completeOrder was called
