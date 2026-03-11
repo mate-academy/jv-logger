@@ -13,7 +13,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.mate" level="info" additivity="false">
+        <Logger name="mate.academy" level="info" additivity="false">
             <AppenderRef ref="LogToConsole"/>
             <AppenderRef ref="LogToFile"/>
         </Logger>
