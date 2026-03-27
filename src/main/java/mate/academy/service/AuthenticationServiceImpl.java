@@ -2,11 +2,16 @@ package mate.academy.service;
 
 import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
+
+    private Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
+
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        //TODO: add corresponding log message about method login was called
+        logger.info("Method login was called. Params: login={}", login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password are incorrect");
@@ -19,5 +24,13 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         // this user identifier should be set by DB. We will use dummy data for this example
         user.setUserId(2L);
         return user;
+    }
+
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
+
+    public Logger getLogger() {
+        return logger;
     }
 }
