@@ -11,17 +11,14 @@ import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
 
 public class Main {
-    private static final Logger logger = LogManager.getLogger(Main.class);
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        logger.info("INFO: Hallo Welt");
-        logger.warn("WARN: Achtung!");
-        logger.error("ERROR: Fehler Beispiel");
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            LOGGER.error("Logging error", e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
