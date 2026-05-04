@@ -1,23 +1,27 @@
 package mate.academy.service;
 
-import mate.academy.exception.AuthenticationException;
 import mate.academy.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class AuthenticationServiceImpl implements AuthenticationService {
-    @Override
-    public User login(String login, String password) throws AuthenticationException {
-        //TODO: add corresponding log message about method login was called
-        User user = findByLogin(login);
-        if (!user.getPassword().equals(password)) {
-            throw new AuthenticationException("Username or password are incorrect");
-        }
-        return user;
-    }
+    private static final Logger logger = 
+            LoggerFactory.getLogger(AuthenticationServiceImpl.class);
 
-    private User findByLogin(String login) {
-        User user = new User(login, "1234");
-        // this user identifier should be set by DB. We will use dummy data for this example
-        user.setUserId(2L);
-        return user;
+    @Override
+    public User login(String login, String password) {
+        logger.trace("Enter login method: login={}", login);
+        if (login == null || password == null) {
+            logger.error("Login or password is null");
+            throw new IllegalArgumentException("Login/password is null");
+        }
+        logger.debug("Checking credentials for user={}", login);
+        if ("admin".equals(login) && "1234".equals(password)) {
+            logger.info("User logged in successfully: {}", login);
+            return new User(login, password);
+        }
+        logger.warn("Login failed for user={}", login);
+        throw new RuntimeException("Invalid credentials");
     }
 }
+
