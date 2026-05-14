@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="https://logging.apache.org/xml/ns"
-               xsi:schemaLocation="
+<Configuration  status="WARN"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="https://logging.apache.org/xml/ns"
+                xsi:schemaLocation="
                        https://logging.apache.org/xml/ns
                        https://logging.apache.org/xml/ns/log4j-config-2.xsd">
 
     <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n</Pattern>
+            </PatternLayout>
+        </Console>
         <File name="FILE" fileName="logs/app.log" append="true">
             <PatternLayout>
                 <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n</Pattern>
@@ -15,6 +21,7 @@
 
     <Loggers>
         <Root level="INFO">
+            <AppenderRef ref="CONSOLE"/>
             <AppenderRef ref="FILE"/>
         </Root>
     </Loggers>
