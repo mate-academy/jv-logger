@@ -8,3 +8,9 @@ mate.academy.exception.AuthenticationException: Wrong password for login: bob
 2026-06-12 22:26:55,728 INFO mate.academy.service.AuthenticationServiceImpl:16 Logging method was called, Params: login = bob
 2026-06-12 22:26:55,735 INFO mate.academy.service.OrderServiceImpl:17 completeOrder method was called
 2026-06-12 22:26:55,755 INFO mate.academy.service.OrderServiceImpl:34 Data was successfully fetched from DB
+2026-06-12 22:52:08,693 INFO mate.academy.Main:17 Application started
+2026-06-12 22:52:08,714 INFO mate.academy.Main:23 Attempting login for user: bob
+2026-06-12 22:52:08,715 INFO mate.academy.service.AuthenticationServiceImpl:15 Method login was called, Params: login = bob
+2026-06-12 22:52:08,718 INFO mate.academy.Main:25 User bob successfully logged in
+2026-06-12 22:52:08,720 INFO mate.academy.service.OrderServiceImpl:16 completeOrder method was called for user 2
+2026-06-12 22:52:08,743 INFO mate.academy.service.OrderServiceImpl:32 Data was successfully fetched from DB for user 2

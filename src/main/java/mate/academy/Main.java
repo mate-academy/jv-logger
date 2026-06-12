@@ -14,11 +14,15 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+        logger.info("Application started");
+
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
 
         try {
+            logger.info("Attempting login for user: {}", "bob");
             user = authenticationService.login("bob", "1234");
+            logger.info("User {} successfully logged in", user.getLogin());
         } catch (AuthenticationException e) {
             logger.error("Authentication Failed", e);
             return;
