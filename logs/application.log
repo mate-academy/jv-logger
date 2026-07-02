@@ -1,0 +1,5 @@
+2026-07-02 19:51:40 INFO  AuthenticationServiceImpl - Login method was called. Login: bob
+2026-07-02 19:51:40 INFO  AuthenticationServiceImpl - User bob successfully authenticated
+2026-07-02 19:51:40 INFO  OrderServiceImpl - Method completeOrder() was called for userId=2
+2026-07-02 19:51:40 INFO  OrderServiceImpl - Successfully fetched products from DB for userId=2
+2026-07-02 19:51:40 INFO  OrderServiceImpl - Order with id 1 was successfully created
