@@ -1,0 +1,7 @@
+2026-07-07 19:10:23 [main] INFO  mate.academy.service.AuthenticationServiceImpl - Method login was called for user: bob
+2026-07-07 19:10:23 [main] INFO  mate.academy.service.AuthenticationServiceImpl - User bob successfully logged in.
+2026-07-07 19:10:23 [main] INFO  mate.academy.service.OrderServiceImpl - Method completeOrder was called for user Id: 2
+2026-07-07 19:12:49 [main] INFO  mate.academy.service.AuthenticationServiceImpl - Method login was called for user: bob
+2026-07-07 19:12:49 [main] INFO  mate.academy.service.AuthenticationServiceImpl - User bob successfully logged in.
+2026-07-07 19:12:49 [main] INFO  mate.academy.service.OrderServiceImpl - Method completeOrder was called for user Id: 2
+2026-07-07 19:12:49 [main] INFO  mate.academy.service.OrderServiceImpl - Successfully fetched data from DB for user Id: 2. Retracted 3 products.
