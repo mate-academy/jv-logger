@@ -16,9 +16,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         User user = findByLogin(login);
 
         if (user == null || !Objects.equals(user.getPassword(), password)) {
-
             logger.warn("Failed login attempt for user: {}", login);
-            throw new AuthenticationException("Username or password are incorrect");
         }
 
         logger.info("User {} successfully logged in.", login);
