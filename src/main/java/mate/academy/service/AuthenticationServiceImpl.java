@@ -12,11 +12,12 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Override
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Method login was called for user: {}", login);
+        logger.info("Method login was called for user:{}", login);
         User user = findByLogin(login);
 
         if (user == null || !Objects.equals(user.getPassword(), password)) {
-            logger.warn("Failed login attempt for user: {}", login);
+            logger.error("Failed login attempt for user: {}", login);
+            throw new AuthenticationException("Failed login attempt for user");
         }
 
         logger.info("User {} successfully logged in.", login);
