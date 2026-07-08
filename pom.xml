@@ -25,10 +25,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Source: https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.14</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.21.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -72,4 +73,3 @@
     </build>
 
 </project>
-
