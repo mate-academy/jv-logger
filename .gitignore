@@ -1,5 +1,5 @@
 .idea/*
 *.iml
 target/*
-log4j.config.xml
+log4j.xml
 app.log
