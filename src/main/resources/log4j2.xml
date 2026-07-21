@@ -1,0 +1,23 @@
+<Configuration>
+
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p %c %m%n"/>
+        </Console>
+
+        <File name="LogToFile"
+        fileName="logs/application.log"
+        append="true">
+            <PatternLayout pattern="%d %p %c %m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="INFO">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="LogToFile"/>
+        </Root>
+
+    </Loggers>
+</Configuration>
