@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <!-- Шаблон виводу: Дата [Потік] Рівень Клас - Повідомлення -->
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+        <Property name="APP_LOG_ROOT">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Вивід у консоль -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Вивід у файл з ротацією (новий файл щодня або при досягненні 10 МБ) -->
+        <RollingFile name="FileAppender"
+                     fileName="${APP_LOG_ROOT}/app.log"
+                     filePattern="${APP_LOG_ROOT}/app-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB" />
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+            <!-- Зберігати максимум 10 архівованих файлів -->
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Головний (кореневий) логер для всього додатку -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+
+        <!-- Окреме налаштування для вашого пакету (опціонально) -->
+        <!-- <Logger name="com.yourpackage" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger> -->
+    </Loggers>
+</Configuration>
