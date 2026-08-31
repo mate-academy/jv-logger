@@ -12,12 +12,13 @@ import org.apache.logging.log4j.Logger;
 public class Main {
     public static void main(String[] args) {
         Logger logger = LogManager.getLogger(Main.class);
+        String loginDummy = "bob";
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
         try {
             user = authenticationService.login("bob", "1234");
         } catch (AuthenticationException e) {
-            logger.error("Authentication failed for login = {}. Reason:", "bob", e);
+            logger.error("Authentication failed for login = {}. Reason:", loginDummy, e);
             return;
         }
         OrderService orderService = new OrderServiceImpl();
