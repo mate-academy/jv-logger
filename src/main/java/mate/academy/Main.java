@@ -6,15 +6,26 @@ import mate.academy.service.AuthenticationService;
 import mate.academy.service.AuthenticationServiceImpl;
 import mate.academy.service.OrderService;
 import mate.academy.service.OrderServiceImpl;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
     public static void main(String[] args) {
         AuthenticationService authenticationService = new AuthenticationServiceImpl();
         User user;
+        String login = "bob";
+        String password = "1234";
         try {
-            user = authenticationService.login("bob", "1234");
+            user = authenticationService.login(login, password);
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error(
+                    "User can't login with entered params. Params: login={}, error={}",
+                    login,
+                    e.getMessage()
+            );
+
             return;
         }
         OrderService orderService = new OrderServiceImpl();
