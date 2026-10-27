@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="CONSOLE_PATTERN">
+            %d{HH:mm:ss.SSS} %highlight{[%-5level]} [%style{%t}{cyan}] %style{%logger}{blue} %style{(line:%L)}{yellow} - %msg%n%throwable
+        </Property>
+        <Property name="FILE_PATTERN">
+            %d{HH:mm:ss.SSS} [%-5level] [%t] %logger (line:%L) - %msg%n%throwable
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${CONSOLE_PATTERN}" disableAnsi="false"/>
+        </Console>
+
+        <File name="LogToFile" fileName="logs/app.log">
+            <PatternLayout pattern="${FILE_PATTERN}" charset="UTF-8"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="LogToFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
